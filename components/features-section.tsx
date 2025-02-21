@@ -62,6 +62,7 @@ export default function FeaturesSection() {
             </>
           }
           learnMoreLink="#"
+          className="overflow-clip"
           svgClassName="bottom-[-17px] left-[-17px]"
         />
         <FeatureCard
