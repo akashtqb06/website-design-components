@@ -25,7 +25,7 @@ export default function Navbar() {
   if (!mounted) return null
 
   return (
-    <nav className="sticky top-0 z-30 py-3 w-full font-sans border-b border-transparent transition duration-200 ease-in-out md:bg-transparent animate-header-slide-down-fade border-white/10 md:backdrop-blur-sm md:backdrop-blur-md">
+    <nav className="sticky top-0 z-30 py-3 w-full font-sans border-b border-transparent transition duration-200 ease-in-out md:bg-transparent animate-header-slide-down-fade md:backdrop-blur-md">
       <div className="hidden flex-row justify-between items-center px-6 mx-auto w-full md:flex lg:max-w-7xl h-[58px] md:max-w-full">
         <Link href="/" className="pt-10 md:pt-0 w-[100px] lg:w-[180px]">
           <h1 className="font-mono text-3xl font-bold tracking-tighter uppercase">MavenDX</h1>
@@ -41,10 +41,10 @@ export default function Navbar() {
           <button className="text-[rgb(120,125,129)] hover:text-slate-50 transition ease-in-out duration-150 font-bold md:hidden lg:inline-block">
             Sign in
           </button>
-          <button className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary shadow hover:bg-primary/90 h-9 px-4 py-2 animate-fade-in gap-1 rounded-lg text-white opacity-0 ease-in-out [--animation-delay:600ms] dark:text-black">
+          {/* <button className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary shadow hover:bg-primary/90 h-9 px-4 py-2 animate-fade-in gap-1 rounded-lg text-white opacity-0 ease-in-out [--animation-delay:600ms] dark:text-black">
             <span>Download Arc </span>
             <Download className="ml-1 size-4 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
-          </button>
+          </button> */}
           <button
             type="button"
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}

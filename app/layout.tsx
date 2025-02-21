@@ -7,9 +7,9 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Arc - Your App",
-  description: "A modern web application",
-    generator: 'v0.dev'
+  title: "Mavenberg Innovations",
+  description: "Migration-Integration-Aggregation-Reporting",
+    generator: 'akashinsights.com'
 }
 
 export default function RootLayout({
