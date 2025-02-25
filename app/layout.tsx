@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description:
     "UI Template",
   icons: {
-    icon: "/favicon.ico"
+    icon: "./favicon.ico"
   }
 };
 
