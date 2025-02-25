@@ -1,4 +1,6 @@
-"use client";
+"use client"
+import styles from './feature-section-2.module.css';
+;
 
 import { motion, AnimatePresence } from "framer-motion";
 import { ReactNode, useEffect, useState } from "react";
@@ -18,7 +20,7 @@ export default function FeaturesSection() {
   const isDarkMode = theme === "dark";
 
   return (
-    <div className="px-4 py-20 max-w-5xl mx-auto relative z-40">
+    <div className={styles.prefixname7642f7}>
       {/* Lightning Icon in Perspective */}
       <div className="[perspective:400px] [transform-style:preserve-3d]">
         <motion.div
@@ -55,8 +57,8 @@ export default function FeaturesSection() {
               isDarkMode ? "bg-neutral-600" : "bg-neutral-400"
             }`}
           />
-          <div className="absolute bottom-0 inset-x-0 bg-gradient-to-r from-transparent via-cyan-500 to-transparent h-px w-[60%] mx-auto" />
-          <div className="absolute bottom-0 inset-x-0 bg-gradient-to-r from-transparent via-cyan-600 blur-sm to-transparent h-[8px] w-[60%] mx-auto" />
+          <div className={styles.prefixname0f89f9} />
+          <div className={styles.prefixnameee3cc4} />
         </motion.div>
       </div>
 
@@ -78,13 +80,13 @@ export default function FeaturesSection() {
       </h2>
 
       {/* Feature Cards Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 py-10">
+      <div className={styles.prefixnamee160c2}>
         {/* Social Media Integration Card */}
         <FeatureCardTitleUp
           title="Post to multiple platforms at once"
           description="With our AI-powered platform, you can post to multiple platforms at once, saving you time and effort."
           isDarkMode={isDarkMode}
-          className="lg:col-span-2"
+          className={styles.prefixname208d77}
         >
           <SocialPlatforms />
         </FeatureCardTitleUp>
@@ -217,14 +219,14 @@ export function SocialPlatforms() {
         isDarkMode ? "bg-[rgba(40,40,40,0.30)]" : "bg-gray-100"
       } [mask-image:radial-gradient(50%_50%_at_50%_50%,white_0%,transparent_100%)]`}
     >
-      <div className="p-8 overflow-hidden h-full">
-        <div className="flex flex-col gap-4 items-center justify-center h-full relative">
-          <div className="flex gap-4 items-center justify-center flex-shrink-0">
+      <div className={styles.prefixnamefc34cc}>
+        <div className={styles.prefixnameba006a}>
+          <div className={styles.prefixname972cf5}>
             <ConnectingLines />
             <SocialIconsGrid />
           </div>
 
-          <div className="flex gap-4 items-center justify-center flex-shrink-0 ml-8">
+          <div className={styles.prefixnamead77bb}>
             <SocialIconsGrid />
           </div>
         </div>
@@ -618,9 +620,9 @@ export function UserInsights() {
       onMouseEnter={() => setHovering(true)}
       onMouseLeave={() => setHovering(false)}
     >
-      <div className="p-8 overflow-hidden h-full relative flex items-start justify-center">
-        <div className="flex absolute inset-0 flex-col group-hover:-translate-y-80 transition duration-200 items-center justify-center">
-          <div className="h-20 w-20 rounded-lg flex items-center justify-center bg-[rgba(248,248,248,0.01)] shadow-[0px_0px_8px_0px_rgba(248,248,248,0.25)_inset,0px_32px_24px_-16px_rgba(0,0,0,0.40)]">
+      <div className={styles.prefixname1bb4f2}>
+        <div className={`${styles.prefixname5d5e0d} group-hover:-translate-y-80 transition`}>
+          <div className={styles.prefixnamef4b3c7}>
             <img
               alt="avatar"
               loading="lazy"
@@ -628,15 +630,15 @@ export function UserInsights() {
               height="100"
               decoding="async"
               data-nimg="1"
-              className="h-16 w-16 rounded-md object-cover"
+              className={`${styles.prefixname2a1547} object-cover`}
               style={{ color: "transparent" }}
               src="/_next/image?url=%2Favatar.png&amp;w=256&amp;q=75"
             />
           </div>
-          <p className="mt-4 text-sm text-neutral-400 font-bold">Manu Arora</p>
-          <div className="flex items-center gap-2 text-xs mt-4">
+          <p className={styles.prefixname6c26aa}>Manu Arora</p>
+          <div className={styles.prefixnamed5a595}>
             <p>Most engagements</p>
-            <div className="h-1 w-1 rounded-full bg-neutral-400"></div>
+            <div className={styles.prefixnamedf6d3c}></div>
             <p>69,420</p>
           </div>
           <svg
@@ -653,8 +655,8 @@ export function UserInsights() {
             ></path>
           </svg>
         </div>
-        <div className="flex absolute inset-0 flex-col translate-y-80 group-hover:translate-y-0 transition duration-200 items-center justify-center">
-          <div className="h-20 w-20 rounded-lg flex items-center justify-center bg-[rgba(248,248,248,0.01)] shadow-[0px_0px_8px_0px_rgba(248,248,248,0.25)_inset,0px_32px_24px_-16px_rgba(0,0,0,0.40)]">
+        <div className={`${styles.prefixname102a00} group-hover:translate-y-0 transition`}>
+          <div className={styles.prefixnamef4b3c7}>
             <img
               alt="avatar"
               loading="lazy"
@@ -662,17 +664,17 @@ export function UserInsights() {
               height="100"
               decoding="async"
               data-nimg="1"
-              className="h-16 w-16 rounded-md object-cover"
+              className={`${styles.prefixname2a1547} object-cover`}
               style={{ color: "transparent" }}
               src="/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1599566150163-29194dcaad36%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D3387%26q%3D80&amp;w=256&amp;q=75"
             />
           </div>
-          <p className="mt-4 text-sm text-neutral-400 font-bold">
+          <p className={styles.prefixname6c26aa}>
             Tyler Durden
           </p>
-          <div className="flex items-center gap-2 text-xs mt-4">
+          <div className={styles.prefixnamed5a595}>
             <p>Most engagements</p>
-            <div className="h-1 w-1 rounded-full bg-neutral-400"></div>
+            <div className={styles.prefixnamedf6d3c}></div>
             <p>8008</p>
           </div>
           <svg
@@ -698,11 +700,11 @@ export function CollaborationTimeline() {
   const isDarkMode = theme === "dark";
 
   return (
-    <div className="h-[20rem] rounded-xl z-40 max-w-[16rem] mx-auto">
-      <div className="p-8 overflow-hidden h-full relative flex flex-col group">
-        <div className="absolute inset-0 h-full w-full flex flex-row gap-4 justify-center">
+    <div className={styles.prefixname71733c}>
+      <div className={`${styles.prefixname2db6d1} group`}>
+        <div className={styles.prefixname63a3d1}>
           {[...Array(7)].map((_, i) => (
-            <div key={i} className="flex flex-col items-center justify-center">
+            <div key={i} className={styles.prefixnamec94736}>
               <div
                 className={`rounded-full h-3 w-3 border ${
                   isDarkMode
@@ -729,29 +731,29 @@ export function CollaborationTimeline() {
 function TimelineCards({ isDarkMode }: { isDarkMode: Boolean }) {
   return (
     <>
-      <div className="p-0.5 rounded-lg border border-neutral-600 w-fit mt-10 ml-4">
-        <div className="h-10 text-xs px-2 text-neutral-400 rounded-[5px] flex items-center justify-center bg-[rgba(248,248,248,0.01)] shadow-[0px_0px_8px_0px_rgba(248,248,248,0.25)_inset,0px_32px_24px_-16px_rgba(0,0,0,0.40)]">
+      <div className={`${styles.prefixnamea38a07} border`}>
+        <div className={styles.prefixname0fc79b}>
           Twitter post
         </div>
       </div>
-      <div className="p-0.5 rounded-lg border border-neutral-600 w-fit mt-4 ml-10 group-hover:border-secondary transition duration-200 group-hover:scale-[1.02]">
-        <div className="h-10 text-xs px-2 text-neutral-400 rounded-[5px] flex items-center justify-center bg-[rgba(248,248,248,0.01)] shadow-[0px_0px_8px_0px_rgba(248,248,248,0.25)_inset,0px_32px_24px_-16px_rgba(0,0,0,0.40)]">
+      <div className={`${styles.prefixnamed95f3a} border group-hover:border-secondary transition group-hover:scale-[1.02]`}>
+        <div className={styles.prefixname0fc79b}>
           Email Campaign
         </div>
       </div>
-      <div className="p-0.5 rounded-lg border border-neutral-600 w-fit mt-4 ml-4">
-        <div className="h-10 text-xs px-2 text-neutral-400 rounded-[5px] flex items-center justify-center bg-[rgba(248,248,248,0.01)] shadow-[0px_0px_8px_0px_rgba(248,248,248,0.25)_inset,0px_32px_24px_-16px_rgba(0,0,0,0.40)]">
+      <div className={`${styles.prefixnameafa8a0} border`}>
+        <div className={styles.prefixname0fc79b}>
           Newsletter Campaign
         </div>
       </div>
-      <div className="absolute h-4 w-4 transition-all duration-200 top-20 left-40 group-hover:left-32">
+      <div className={`${styles.prefixnamecea994} group-hover:left-32`}>
         <svg
           width="19"
           height="19"
           viewBox="0 0 19 19"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="h-4 w-4 transition duration-200 top-20 left-40 group-hover:left-32"
+          className={`${styles.prefixnamecdaea7} transition group-hover:left-32`}
         >
           <path
             d="M3.08365 1.18326C2.89589 1.11581 2.70538 1.04739 2.54453 1.00558C2.39192 0.965918 2.09732 0.900171 1.78145 1.00956C1.41932 1.13497 1.13472 1.41956 1.00932 1.78169C0.899927 2.09756 0.965674 2.39216 1.00533 2.54477C1.04714 2.70562 1.11557 2.89613 1.18301 3.0839L5.9571 16.3833C6.04091 16.6168 6.12128 16.8408 6.2006 17.0133C6.26761 17.1591 6.42 17.4781 6.75133 17.6584C7.11364 17.8555 7.54987 17.8612 7.91722 17.6737C8.25317 17.5021 8.41388 17.1873 8.48469 17.0433C8.56852 16.8729 8.65474 16.6511 8.74464 16.4198L10.8936 10.8939L16.4196 8.74489C16.6509 8.655 16.8726 8.56879 17.043 8.48498C17.187 8.41416 17.5018 8.25346 17.6734 7.91751C17.8609 7.55016 17.8552 7.11392 17.6581 6.75162C17.4778 6.42029 17.1589 6.2679 17.0131 6.20089C16.8405 6.12157 16.6165 6.0412 16.383 5.9574L3.08365 1.18326Z"
@@ -762,18 +764,18 @@ function TimelineCards({ isDarkMode }: { isDarkMode: Boolean }) {
             stroke-linejoin="round"
           ></path>
         </svg>
-        <div className="absolute top-3 left-3 p-1 rounded-md text-[10px] whitespace-pre text-neutral-500 transition duration-200 group-hover:text-secondary">
+        <div className={`${styles.prefixname39b8c9} transition group-hover:text-secondary`}>
           Manu Arora
         </div>
       </div>
-      <div className="absolute h-4 w-4 transition-all duration-200 top-60 left-12 group-hover:left-32 group-hover:top-44">
+      <div className={`${styles.prefixname86ee6f} group-hover:left-32 group-hover:top-44`}>
         <svg
           width="19"
           height="19"
           viewBox="0 0 19 19"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="h-4 w-4 transition duration-200 top-60 left-12 group-hover:left-32 group-hover:top-44"
+          className={`${styles.prefixnamea80b29} transition group-hover:left-32 group-hover:top-44`}
         >
           <path
             d="M3.08365 1.18326C2.89589 1.11581 2.70538 1.04739 2.54453 1.00558C2.39192 0.965918 2.09732 0.900171 1.78145 1.00956C1.41932 1.13497 1.13472 1.41956 1.00932 1.78169C0.899927 2.09756 0.965674 2.39216 1.00533 2.54477C1.04714 2.70562 1.11557 2.89613 1.18301 3.0839L5.9571 16.3833C6.04091 16.6168 6.12128 16.8408 6.2006 17.0133C6.26761 17.1591 6.42 17.4781 6.75133 17.6584C7.11364 17.8555 7.54987 17.8612 7.91722 17.6737C8.25317 17.5021 8.41388 17.1873 8.48469 17.0433C8.56852 16.8729 8.65474 16.6511 8.74464 16.4198L10.8936 10.8939L16.4196 8.74489C16.6509 8.655 16.8726 8.56879 17.043 8.48498C17.187 8.41416 17.5018 8.25346 17.6734 7.91751C17.8609 7.55016 17.8552 7.11392 17.6581 6.75162C17.4778 6.42029 17.1589 6.2679 17.0131 6.20089C16.8405 6.12157 16.6165 6.0412 16.383 5.9574L3.08365 1.18326Z"
@@ -784,7 +786,7 @@ function TimelineCards({ isDarkMode }: { isDarkMode: Boolean }) {
             stroke-linejoin="round"
           ></path>
         </svg>
-        <div className="absolute top-3 left-3 p-1 rounded-md text-[10px] whitespace-pre text-neutral-500 transition duration-200 group-hover:text-white">
+        <div className={`${styles.prefixname9d569d} transition group-hover:text-white`}>
           Tyler Durden
         </div>
       </div>
@@ -802,8 +804,8 @@ export function AnalyticsGraph() {
         isDarkMode ? "bg-[rgba(40,40,40,0.30)]" : "bg-gray-100"
       } [mask-image:radial-gradient(50%_50%_at_50%_50%,white_0%,transparent_100%)]`}
     >
-      <div className="p-8 overflow-hidden h-full">
-        <div className="flex flex-col gap-4 items-center justify-center h-full relative">
+      <div className={styles.prefixnamefc34cc}>
+        <div className={styles.prefixnameba006a}>
           <AnimatePresence>
             <motion.div
               className="message absolute left-10 top-10 rounded-full px-4 py-2 shadow-[0px_0px_8px_0px_rgba(248,248,248,0.25)_inset,0px_32px_24px_-16px_rgba(0,0,0,0.40)_inset] bg-gray-900 text-white"
@@ -812,7 +814,7 @@ export function AnalyticsGraph() {
               exit={{ opacity: 0, scale: 0.8, y: -20 }}
               transition={{ duration: 0.3, ease: "easeOut" }}
             >
-              <p className="text-xs">+200 connections</p>
+              <p className={styles.prefixname9d5b16}>+200 connections</p>
             </motion.div>
           </AnimatePresence>
           <motion.svg
@@ -930,7 +932,7 @@ export function AnalyticsGraph() {
             viewBox="0 0 335 162"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute -left-[4.4rem] top-12"
+            className={`${styles.prefixnamee7ae5f} -left-[4.4rem]`}
           >
             <path
               opacity="0.1"
@@ -962,7 +964,7 @@ export function AnalyticsGraph() {
             viewBox="0 0 36 320"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute inset-x-0 -top-2 h-full w-full vertical-dots"
+            className={`${styles.prefixname9bf0b0} -top-2 vertical-dots`}
           >
             <path
               opacity="0.1"
@@ -1102,7 +1104,7 @@ export function AnalyticsGraph() {
             viewBox="0 0 19 19"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute inset-0 translate-x-4 m-auto h-4 w-4 cursor"
+            className={styles.prefixname24f3b2}
           >
             <path
               d="M3.08365 1.18326C2.89589 1.11581 2.70538 1.04739 2.54453 1.00558C2.39192 0.965918 2.09732 0.900171 1.78145 1.00956C1.41932 1.13497 1.13472 1.41956 1.00932 1.78169C0.899927 2.09756 0.965674 2.39216 1.00533 2.54477C1.04714 2.70562 1.11557 2.89613 1.18301 3.0839L5.9571 16.3833C6.04091 16.6168 6.12128 16.8408 6.2006 17.0133C6.26761 17.1591 6.42 17.4781 6.75133 17.6584C7.11364 17.8555 7.54987 17.8612 7.91722 17.6737C8.25317 17.5021 8.41388 17.1873 8.48469 17.0433C8.56852 16.8729 8.65474 16.6511 8.74464 16.4198L10.8936 10.8939L16.4196 8.74489C16.6509 8.655 16.8726 8.56879 17.043 8.48498C17.187 8.41416 17.5018 8.25346 17.6734 7.91751C17.8609 7.55016 17.8552 7.11392 17.6581 6.75162C17.4778 6.42029 17.1589 6.2679 17.0131 6.20089C16.8405 6.12157 16.6165 6.0412 16.383 5.9574L3.08365 1.18326Z"
@@ -1129,8 +1131,8 @@ export function AIIntegration() {
         isDarkMode ? "bg-[rgba(40,40,40,0.30)]" : "bg-gray-100"
       } [mask-image:radial-gradient(50%_50%_at_50%_50%,white_0%,transparent_100%)]`}
     >
-      <div className="p-8 overflow-hidden h-full relative flex items-center justify-center">
-        <div className="flex flex-row flex-shrink-0 justify-center items-center gap-2">
+      <div className={styles.prefixname627edd}>
+        <div className={styles.prefixname442bbe}>
           {[1, 2, 3, 4, 5].map((_, i) => (
             <motion.div
               key={i}
@@ -1175,15 +1177,15 @@ export function AIIntegration() {
           animate={{ x: [-200, 200] }} // Moves right and left
           transition={{ duration: 4, repeat: Infinity, ease: "linear" }} // Smooth infinite movement
         >
-          <div className="w-10 h-32 top-1/2 -translate-y-1/2 absolute -left-10">
-            <div className="opacity-0 w-full h-full" style={{ opacity: 1 }}>
-              <div id="tsparticles" className="h-full w-full">
+          <div className={`${styles.prefixname5c5d79} -left-10`}>
+            <div className={styles.prefixname673f86} style={{ opacity: 1 }}>
+              <div id="tsparticles" className={styles.prefixname4d10c9}>
                 <SparklesCore
                   background="transparent"
                   minSize={0.7}
                   maxSize={1.4}
                   particleDensity={2000}
-                  className="w-full h-full"
+                  className={styles.prefixnamef5c96b}
                   particleColor="#06b6d4"
                 />{" "}
               </div>

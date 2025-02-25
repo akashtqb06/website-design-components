@@ -1,0 +1,27 @@
+.prefixnamea3b570 {
+  @apply absolute inset-0 h-full w-full bg-background opacity-30;
+}
+.prefixname2c2bfd {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto relative z-10;
+}
+.prefixname8ef75a {
+  @apply p-8 rounded-xl border-border bg-card/30 shadow-sm;
+}
+.prefixname450f34 {
+  @apply text-base font-semibold text-card-foreground py-2;
+}
+.prefixname212c74 {
+  @apply flex gap-2 items-center mt-8;
+}
+.prefixnamefee2ce {
+  @apply rounded-full;
+}
+.prefixname06858a {
+  @apply flex flex-col;
+}
+.prefixname12f4ba {
+  @apply text-sm font-normal max-w-sm text-foreground;
+}
+.prefixnamec4693f {
+  @apply text-sm font-normal max-w-sm text-muted-foreground;
+}

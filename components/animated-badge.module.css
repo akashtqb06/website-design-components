@@ -1,0 +1,17 @@
+.prefixname457e1f {
+  @apply inline-flex h-7 items-center justify-between rounded-full border-white/5 bg-white/10 px-3 text-xs text-white transition-all ease-in hover:cursor-pointer hover:bg-white/20 gap-1 translate-y-[-1rem] animate-fade-in opacity-0;
+}
+
+:global(.dark) .prefixname457e1f {
+    @apply text-black;
+  }
+.prefixnameace63e {
+  @apply mx-auto max-w-md text-neutral-600/50 animate-shimmer bg-clip-text bg-no-repeat bg-gradient-to-r from-neutral-100 via-black/80 via-50% to-neutral-100 inline-flex items-center justify-center;
+}
+
+:global(.dark) .prefixnameace63e {
+    @apply text-neutral-400/50 from-neutral-900 via-white/80 to-neutral-900;
+  }
+.prefixname00081f {
+  @apply ml-1 h-3 w-3 transition-transform duration-300 ease-in-out;
+}

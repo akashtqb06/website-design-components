@@ -1,0 +1,22 @@
+.prefixname48c43f {
+  @apply relative mx-auto mt-32 max-w-[80rem] px-6 text-center md:px-8;
+}
+.prefixname9b87d3 {
+  @apply bg-gradient-to-br from-black from-30% to-black/40 bg-clip-text py-6 text-5xl font-medium leading-none tracking-tighter text-transparent text-balance sm:text-6xl md:text-7xl lg:text-8xl translate-y-[-1rem] animate-fade-in opacity-0;
+}
+
+:global(.dark) .prefixname9b87d3 {
+    @apply from-white to-white/40;
+  }
+.prefixnamed58f63 {
+  @apply hidden md:block;
+}
+.prefixname02bd49 {
+  @apply mb-12 text-lg tracking-tight text-gray-400 md:text-xl text-balance translate-y-[-1rem] animate-fade-in opacity-0;
+}
+.prefixnamedcb578 {
+  @apply translate-y-[-1rem] animate-fade-in opacity-0 ease-in-out;
+}
+.prefixnameecb181 {
+  @apply ml-1 h-4 w-4 transition-transform duration-300 ease-in-out;
+}

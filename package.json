@@ -7,10 +7,12 @@
     "build": "node scripts/generateSitemap.js && next build",
     "start": "next start",
     "lint": "next lint",
-    "prebuild": "node scripts/generateSitemap.js"
-
+    "prebuild": "node scripts/generateSitemap.js", 
+    "process:generate-css": "node scripts/generate-css-modules.js --folders components app --pname prefixname"
   },
   "dependencies": {
+    "@babel/parser": "^7.26.9",
+    "@babel/traverse": "^7.26.9",
     "@emotion/is-prop-valid": "latest",
     "@hookform/resolvers": "^3.9.1",
     "@radix-ui/react-accordion": "^1.2.2",
@@ -67,6 +69,7 @@
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7",
     "vaul": "^0.9.6",
+    "yargs": "^17.7.2",
     "zod": "^3.24.1"
   },
   "devDependencies": {

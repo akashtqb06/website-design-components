@@ -1,0 +1,27 @@
+.prefixnamef42fb7 {
+  @apply relative min-h-screen bg-background text-foreground overflow-hidden;
+}
+.prefixname7611f9 {
+  @apply container mx-auto px-4 py-12 relative z-10;
+}
+.prefixname36733d {
+  @apply pb-20;
+}
+.prefixname0f89f9 {
+  @apply absolute bottom-0 inset-x-0 bg-gradient-to-r from-transparent via-cyan-500 to-transparent h-px w-[60%] mx-auto;
+}
+.prefixnameee3cc4 {
+  @apply absolute bottom-0 inset-x-0 bg-gradient-to-r from-transparent via-cyan-600 blur-sm to-transparent h-[8px] w-[60%] mx-auto;
+}
+.prefixname78286f {
+  @apply max-w-5xl mx-auto text-center tracking-tight font-medium text-foreground text-3xl md:text-5xl md:leading-tight pt-4;
+}
+.prefixname3f0720 {
+  @apply text-sm md:text-base max-w-4xl my-4 mx-auto text-muted-foreground text-center font-normal;
+}
+.prefixnamede7973 {
+  @apply py-60 relative;
+}
+.prefixname66a337 {
+  @apply absolute bottom-0 z-10 inset-x-0 h-40 w-full bg-gradient-to-t from-background to-transparent;
+}

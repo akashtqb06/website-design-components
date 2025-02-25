@@ -1,0 +1,55 @@
+.prefixname40233d {
+  @apply bg-transparent relative w-full z-20;
+}
+.prefixnamec92def {
+  @apply mx-auto max-w-full px-8 py-24 sm:py-32 lg:px-10 lg:py-32 relative;
+}
+.prefixnamebd56e7 {
+  @apply absolute left-0 top-44 h-56 w-[90%] opacity-10 overflow-x-hidden bg-[#9560EB] bg-opacity-40 blur-[337.4px];
+}
+.prefixname22b4e6 {
+  @apply mx-auto max-w-4xl;
+}
+.prefixname9ab3b5 {
+  @apply mt-8 max-w-2xl mx-auto text-center text-5xl font-normal tracking-tight text-gray-800;
+}
+
+:global(.dark) .prefixname9ab3b5 {
+    @apply text-gray-200;
+  }
+.prefixname4cc0d3 {
+  @apply mt-4 max-w-xl mx-auto pt-4 text-lg text-center tracking-tight text-black/60;
+}
+
+:global(.dark) .prefixname4cc0d3 {
+    @apply text-gray-400;
+  }
+.prefixname61eb46 {
+  @apply mt-10 space-y-6;
+}
+.prefixname248fe6 {
+  @apply pt-6;
+}
+.prefixname508e30 {
+  @apply cursor-pointer flex w-full items-start justify-between text-left text-black;
+}
+
+:global(.dark) .prefixname508e30 {
+    @apply text-white;
+  }
+.prefixnamefbb3e7 {
+  @apply text-base relative cursor-pointer font-semibold leading-7;
+}
+.prefixname601216 {
+  @apply h-6 w-6;
+}
+.prefixnamec24fe4 {
+  @apply mt-2 pr-12;
+}
+.prefixname1b80a3 {
+  @apply text-base leading-7 text-gray-600;
+}
+
+:global(.dark) .prefixname1b80a3 {
+    @apply text-gray-400;
+  }

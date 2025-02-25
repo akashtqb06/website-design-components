@@ -1,0 +1,6 @@
+.prefixname296133 {
+  @apply pointer-events-none absolute inset-0 flex items-center justify-center;
+}
+.prefixname3730f2 {
+  @apply h-4 w-px animate-caret-blink bg-foreground duration-1000;
+}

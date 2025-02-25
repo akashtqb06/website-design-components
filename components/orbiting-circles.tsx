@@ -1,5 +1,5 @@
 "use client"
-
+import styles from './orbiting-circles.module.css';
 import { motion } from "framer-motion"
 import { cn } from "@/lib/utils"
 import React from "react"
@@ -35,7 +35,7 @@ export function OrbitingCircles({
         <svg
           xmlns="http://www.w3.org/2000/svg"
           version="1.1"
-          className="pointer-events-none absolute inset-0 size-full"
+          className={styles.prefixnamef65ed7}
         >
           <circle className="stroke-black/10 stroke-1 dark:stroke-white/10" cx="50%" cy="50%" r={radius} fill="none" />
         </svg>

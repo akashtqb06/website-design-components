@@ -1,0 +1,41 @@
+.prefixnamefc6fe7 {
+  @apply overflow-x-hidden;
+}
+.prefixname982b1b {
+  @apply mx-auto max-w-6xl px-4 sm:px-6;
+}
+.prefixnamef1ebfe {
+  @apply grid gap-10 py-8 sm:grid-cols-12 md:py-12;
+}
+.prefixnamecec37f {
+  @apply space-y-2 sm:col-span-12 lg:col-span-4;
+}
+.prefixname6def19 {
+  @apply text-sm text-black/60;
+}
+
+:global(.dark) .prefixname6def19 {
+    @apply text-gray-400;
+  }
+.prefixnameb0846a {
+  @apply space-y-2 sm:col-span-6 md:col-span-3 lg:col-span-2;
+}
+.prefixnameaceb99 {
+  @apply text-sm font-medium;
+}
+.prefixname5b7309 {
+  @apply space-y-2 text-sm;
+}
+.prefixname4f0bee {
+  @apply text-black/40 hover:text-gray-900;
+}
+
+:global(.dark) .prefixname4f0bee {
+    @apply text-gray-400;
+  }
+.prefixname001656 {
+  @apply flex gap-1;
+}
+.prefixnamecf8a72 {
+  @apply flex items-center justify-center text-zinc-500 hover:text-zinc-600;
+}
