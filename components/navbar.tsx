@@ -1,102 +1,203 @@
 "use client"
 import styles from './navbar.module.css';
-import { useState, useEffect } from "react"
-import Link from "next/link"
-import { useTheme } from "next-themes"
-import { Moon, Sun, Menu, Download } from "lucide-react"
-import * as DropdownMenu from "@radix-ui/react-dropdown-menu"
+;
 
-const navItems = [
-  { name: "About", href: "/about" },
-  { name: "Blog", href: "/blog" },
-  { name: "Customers", href: "/customers" },
-  { name: "Pricing", href: "/pricing" },
-  { name: "Enterprise", href: "/enterprise" },
-  { name: "Changelog", href: "/changelog" },
-  { name: "Docs", href: "/docs" },
-]
+import type React from "react";
+import Link from "next/link";
+import { useState, useEffect } from "react";
+import { Sun, Moon, Menu, X } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import { cn } from "@/lib/utils";
 
-export default function Navbar() {
-  const [mounted, setMounted] = useState(false)
-  const { theme, setTheme } = useTheme()
+const Navbar = () => {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
-  useEffect(() => setMounted(true), [])
+  useEffect(() => {
+    const isDark = document.documentElement.classList.contains("dark");
+    setIsDarkMode(isDark);
 
-  if (!mounted) return null
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Check initial scroll position
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const toggleDarkMode = () => {
+    const newMode = !isDarkMode;
+    setIsDarkMode(newMode);
+    document.documentElement.classList.toggle("dark", newMode);
+  };
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
-    <nav className={`${styles.prefixnameae5255} transition`}>
-      <div className={styles.prefixnamedcdafb}>
-        <Link href="/" className={styles.prefixname00be1e}>
-          <h1 className={styles.prefixname9b2aec}>MavenDX</h1>
-        </Link>
-        <div className={styles.prefixname859ec9}>
-          {navItems.map((item) => (
-            <Link key={item.name} href={item.href} className={`${styles.prefixname0471a4} transition`}>
-              {item.name}
-            </Link>
-          ))}
+    <nav
+      className={cn(
+        "max-w-7xl fixed top-4 mx-auto inset-x-0 z-50 w-[95%] lg:w-full transition-all duration-300",
+        isScrolled
+          ? "top-4 bg-white/80 dark:bg-neutral-900/80 backdrop-blur-md max-w-6xl rounded-full shadow-lg dark:shadow-neutral-800/30"
+          : "bg-transparent"
+      )}
+    >
+      <div className={styles.prefixnamee37deb}>
+        <div className={`${styles.prefixname55aa77} transition`}>
+          <div className={styles.prefixname10e06a}>
+            <Logo />
+            <div className={styles.prefixname2ee271}>
+              <NavLink href="#section1">Section 1</NavLink>
+              <NavLink href="#section2">Section 2</NavLink>
+              <NavLink href="#section3">Section 3</NavLink>
+            </div>
+          </div>
+          <div className={styles.prefixname2aa9bd}>
+            <ThemeToggle
+              isDarkMode={isDarkMode}
+              toggleDarkMode={toggleDarkMode}
+            />
+            <AuthButtons />
+          </div>
         </div>
-        <div className={styles.prefixname46262d}>
-          <button className={`${styles.prefixnameff2e0d} transition`}>
-            Sign in
-          </button>
-          {/* <button className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary shadow hover:bg-primary/90 h-9 px-4 py-2 animate-fade-in gap-1 rounded-lg text-white opacity-0 ease-in-out [--animation-delay:600ms] dark:text-black">
-            <span>Download Arc </span>
-            <Download className="ml-1 size-4 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
-          </button> */}
+      </div>
+      <div className={styles.prefixnamee021b7}>
+        <div className={`${styles.prefixnamef3bcac} transition`}>
+          <Logo />
           <button
-            type="button"
-            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            className={`${styles.prefixname50ccfa} transition`}
-            aria-label="Toggle theme"
+            onClick={toggleMenu}
+            className={styles.prefixnamedc76ae}
           >
-            <Sun className={`${styles.prefixnamea2e57e} stroke-zinc-900 dark:stroke-zinc-100`} />
-            <Moon className={`${styles.prefixnameb6ea97} stroke-zinc-900 dark:stroke-zinc-100`} />
+            {isMenuOpen ? (
+              <X className={styles.prefixname8fecc1} />
+            ) : (
+              <Menu className={styles.prefixname8fecc1} />
+            )}
           </button>
         </div>
       </div>
-      <div className={styles.prefixnamebc6e72}>
-        <Link href="/" className={styles.prefixname0c4a3c}>
-          <h1 className={styles.prefixname9b2aec}>MavenDX</h1>
-        </Link>
-        <div className={styles.prefixnamede75b5}>
-          <DropdownMenu.Root>
-            <DropdownMenu.Trigger asChild>
-              <button className={`${styles.prefixname05a177} transition`}>
-                <Menu className={styles.prefixname5954b6} />
-              </button>
-            </DropdownMenu.Trigger>
-            <DropdownMenu.Portal>
-              <DropdownMenu.Content
-                className="min-w-[220px] bg-white dark:bg-zinc-800 rounded-md p-2 shadow-md"
-                sideOffset={5}
-              >
-                {navItems.map((item) => (
-                  <DropdownMenu.Item key={item.name} className="outline-none">
-                    <Link
-                      href={item.href}
-                      className={styles.prefixname2f9266}
-                    >
-                      {item.name}
-                    </Link>
-                  </DropdownMenu.Item>
-                ))}
-                <DropdownMenu.Separator className="h-px bg-zinc-200 dark:bg-zinc-700 my-2" />
-                <DropdownMenu.Item className="outline-none">
-                  <button
-                    className={styles.prefixname929aef}
-                    onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-                  >
-                    {theme === "dark" ? "Light Mode" : "Dark Mode"}
-                  </button>
-                </DropdownMenu.Item>
-              </DropdownMenu.Content>
-            </DropdownMenu.Portal>
-          </DropdownMenu.Root>
+      <AnimatePresence>
+        {isMenuOpen && <MobileMenu toggleMenu={toggleMenu} />}
+      </AnimatePresence>
+    </nav>
+  );
+};
+
+const Logo = () => (
+  <Link
+    href="/"
+    className={styles.prefixnameac6379}
+  >
+    <div className={styles.prefixname66df66}></div>
+    <span className={styles.prefixname29ea19}>Maven Dx</span>
+  </Link>
+);
+
+const NavLink = ({
+  href,
+  children
+}: {
+  href: string;
+  children: React.ReactNode;
+}) => (
+  <Link
+    href={href}
+    className={styles.prefixname808102}
+  >
+    {children}
+  </Link>
+);
+
+const ThemeToggle = ({
+  isDarkMode,
+  toggleDarkMode
+}: {
+  isDarkMode: boolean;
+  toggleDarkMode: () => void;
+}) => (
+  <button
+    onClick={toggleDarkMode}
+    className={styles.prefixnamed0e462}
+  >
+    {isDarkMode ? (
+      <Moon className={styles.prefixname6375ec} />
+    ) : (
+      <Sun className={styles.prefixname6375ec} />
+    )}
+    <span className="sr-only">Toggle theme</span>
+  </button>
+);
+
+const AuthButtons = () => (
+  <>
+    <Link
+      href="/login"
+      className={`${styles.prefixnamebd64c0} transition`}
+    >
+      Login
+    </Link>
+    <Link
+      href="/signup"
+      className={`${styles.prefixname6ddeeb} transition`}
+    >
+      Sign Up
+    </Link>
+  </>
+);
+
+const MobileMenu = ({ toggleMenu }: { toggleMenu: () => void }) =>{
+  const [isDarkMode, setIsDarkMode] = useState(false);
+  const toggleDarkMode = () => {
+    const newMode = !isDarkMode;
+    setIsDarkMode(newMode);
+    document.documentElement.classList.toggle("dark", newMode);
+  };
+return(
+  <motion.div
+    initial={{ opacity: 0, y: -20 }}
+    animate={{ opacity: 1, y: 0 }}
+    exit={{ opacity: 0, y: -20 }}
+    transition={{ duration: 0.2 }}
+    className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right lg:hidden"
+  >
+    <div className={`${styles.prefixnameb2eaeb} divide-y-2 divide-neutral-50 dark:divide-neutral-700`}>
+      <div className={styles.prefixname1e3e12}>
+        <div className={styles.prefixname22c60d}>
+          <Logo />
+          <div className={`${styles.prefixnameb806fc} -mr-2`}>
+          <ThemeToggle
+              isDarkMode={isDarkMode}
+              toggleDarkMode={toggleDarkMode}
+            />
+            <button
+              onClick={toggleMenu}
+              className={styles.prefixname7f5820}
+            >
+            
+              <X className={styles.prefixname601216} aria-hidden="true" />
+            </button>
+          </div>
+        </div>
+        <div className={styles.prefixname42b34b}>
+          <nav className={styles.prefixname14b265}>
+            <NavLink href="#section1">Section 1</NavLink>
+            <NavLink href="#section2">Section 2</NavLink>
+            <NavLink href="#section3">Section 3</NavLink>
+          </nav>
         </div>
       </div>
-    </nav>
-  )
-}
+      <div className={styles.prefixname45067a}>
+        <div className={styles.prefixnamee798b7}> 
+        <AuthButtons />
 
+        </div>
+      </div>
+    </div>
+  </motion.div>
+)};
+
+export default Navbar;

@@ -1,6 +1,3 @@
-.prefixname844624 {
-  @apply flex-grow;
-}
-.prefixname11d7aa {
-  @apply relative overflow-hidden;
+.prefixname36509c {
+  @apply fixed inset-0 w-full h-full bg-transparent pointer-events-none;
 }
