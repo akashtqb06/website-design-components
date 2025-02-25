@@ -729,427 +729,63 @@ export function CollaborationTimeline() {
 function TimelineCards({ isDarkMode }: { isDarkMode: Boolean }) {
   return (
     <>
-      <div className="p-8 overflow-hidden h-full relative flex flex-col group">
-        <div className="absolute inset-0 h-full w-full flex flex-row gap-4 justify-center flex-shrink-0 ">
-          <div className="flex flex-col items-center justify-center">
-            <div className="rounded-full h-3 w-3 border border-[rgba(255,255,255,0.2)] bg-[rgba(248,248,248,0.02)] shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]"></div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="2"
-              height="265"
-              viewBox="0 0 2 265"
-              fill="none"
-            >
-              <path
-                d="M1 265V1"
-                stroke="url(#:R4m977puja:)"
-                stroke-opacity="0.1"
-                stroke-width="1.5"
-                stroke-linecap="round"
-              ></path>
-              <defs>
-                <linearGradient
-                  id=":R4m977puja:"
-                  x1="1.5"
-                  y1="1"
-                  x2="1.5"
-                  y2="265"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stop-color="#F8F8F8" stop-opacity="0.05"></stop>
-                  <stop
-                    offset="0.530519"
-                    stop-color="#F8F8F8"
-                    stop-opacity="0.5"
-                  ></stop>
-                  <stop
-                    offset="1"
-                    stop-color="#F8F8F8"
-                    stop-opacity="0.05"
-                  ></stop>
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <div className="rounded-full h-3 w-3 border border-[rgba(255,255,255,0.2)] bg-[rgba(248,248,248,0.02)] shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]"></div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="2"
-              height="265"
-              viewBox="0 0 2 265"
-              fill="none"
-            >
-              <path
-                d="M1 265V1"
-                stroke="url(#:R8m977puja:)"
-                stroke-opacity="0.1"
-                stroke-width="1.5"
-                stroke-linecap="round"
-              ></path>
-              <defs>
-                <linearGradient
-                  id=":R8m977puja:"
-                  x1="1.5"
-                  y1="1"
-                  x2="1.5"
-                  y2="265"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stop-color="#F8F8F8" stop-opacity="0.05"></stop>
-                  <stop
-                    offset="0.530519"
-                    stop-color="#F8F8F8"
-                    stop-opacity="0.5"
-                  ></stop>
-                  <stop
-                    offset="1"
-                    stop-color="#F8F8F8"
-                    stop-opacity="0.05"
-                  ></stop>
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <div className="rounded-full h-3 w-3 border border-[rgba(255,255,255,0.2)] bg-[rgba(248,248,248,0.02)] shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]"></div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="2"
-              height="265"
-              viewBox="0 0 2 265"
-              fill="none"
-            >
-              <path
-                d="M1 265V1"
-                stroke="url(#:Rcm977puja:)"
-                stroke-opacity="0.1"
-                stroke-width="1.5"
-                stroke-linecap="round"
-              ></path>
-              <defs>
-                <linearGradient
-                  id=":Rcm977puja:"
-                  x1="1.5"
-                  y1="1"
-                  x2="1.5"
-                  y2="265"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stop-color="#F8F8F8" stop-opacity="0.05"></stop>
-                  <stop
-                    offset="0.530519"
-                    stop-color="#F8F8F8"
-                    stop-opacity="0.5"
-                  ></stop>
-                  <stop
-                    offset="1"
-                    stop-color="#F8F8F8"
-                    stop-opacity="0.05"
-                  ></stop>
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <div className="rounded-full h-3 w-3 border border-[rgba(255,255,255,0.2)] bg-[rgba(248,248,248,0.02)] shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]"></div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="2"
-              height="265"
-              viewBox="0 0 2 265"
-              fill="none"
-            >
-              <path
-                d="M1 265V1"
-                stroke="url(#:Rgm977puja:)"
-                stroke-opacity="0.1"
-                stroke-width="1.5"
-                stroke-linecap="round"
-              ></path>
-              <defs>
-                <linearGradient
-                  id=":Rgm977puja:"
-                  x1="1.5"
-                  y1="1"
-                  x2="1.5"
-                  y2="265"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stop-color="#F8F8F8" stop-opacity="0.05"></stop>
-                  <stop
-                    offset="0.530519"
-                    stop-color="#F8F8F8"
-                    stop-opacity="0.5"
-                  ></stop>
-                  <stop
-                    offset="1"
-                    stop-color="#F8F8F8"
-                    stop-opacity="0.05"
-                  ></stop>
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <div className="rounded-full h-3 w-3 border border-[rgba(255,255,255,0.2)] bg-[rgba(248,248,248,0.02)] shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]"></div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="2"
-              height="265"
-              viewBox="0 0 2 265"
-              fill="none"
-            >
-              <path
-                d="M1 265V1"
-                stroke="url(#:Rkm977puja:)"
-                stroke-opacity="0.1"
-                stroke-width="1.5"
-                stroke-linecap="round"
-              ></path>
-              <defs>
-                <linearGradient
-                  id=":Rkm977puja:"
-                  x1="1.5"
-                  y1="1"
-                  x2="1.5"
-                  y2="265"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stop-color="#F8F8F8" stop-opacity="0.05"></stop>
-                  <stop
-                    offset="0.530519"
-                    stop-color="#F8F8F8"
-                    stop-opacity="0.5"
-                  ></stop>
-                  <stop
-                    offset="1"
-                    stop-color="#F8F8F8"
-                    stop-opacity="0.05"
-                  ></stop>
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <div className="rounded-full h-3 w-3 border border-[rgba(255,255,255,0.2)] bg-[rgba(248,248,248,0.02)] shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]"></div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="2"
-              height="265"
-              viewBox="0 0 2 265"
-              fill="none"
-            >
-              <path
-                d="M1 265V1"
-                stroke="url(#:Rom977puja:)"
-                stroke-opacity="0.1"
-                stroke-width="1.5"
-                stroke-linecap="round"
-              ></path>
-              <defs>
-                <linearGradient
-                  id=":Rom977puja:"
-                  x1="1.5"
-                  y1="1"
-                  x2="1.5"
-                  y2="265"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stop-color="#F8F8F8" stop-opacity="0.05"></stop>
-                  <stop
-                    offset="0.530519"
-                    stop-color="#F8F8F8"
-                    stop-opacity="0.5"
-                  ></stop>
-                  <stop
-                    offset="1"
-                    stop-color="#F8F8F8"
-                    stop-opacity="0.05"
-                  ></stop>
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <div className="rounded-full h-3 w-3 border border-[rgba(255,255,255,0.2)] bg-[rgba(248,248,248,0.02)] shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]"></div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="2"
-              height="265"
-              viewBox="0 0 2 265"
-              fill="none"
-            >
-              <path
-                d="M1 265V1"
-                stroke="url(#:Rsm977puja:)"
-                stroke-opacity="0.1"
-                stroke-width="1.5"
-                stroke-linecap="round"
-              ></path>
-              <defs>
-                <linearGradient
-                  id=":Rsm977puja:"
-                  x1="1.5"
-                  y1="1"
-                  x2="1.5"
-                  y2="265"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stop-color="#F8F8F8" stop-opacity="0.05"></stop>
-                  <stop
-                    offset="0.530519"
-                    stop-color="#F8F8F8"
-                    stop-opacity="0.5"
-                  ></stop>
-                  <stop
-                    offset="1"
-                    stop-color="#F8F8F8"
-                    stop-opacity="0.05"
-                  ></stop>
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <div className="rounded-full h-3 w-3 border border-[rgba(255,255,255,0.2)] bg-[rgba(248,248,248,0.02)] shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]"></div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="2"
-              height="265"
-              viewBox="0 0 2 265"
-              fill="none"
-            >
-              <path
-                d="M1 265V1"
-                stroke="url(#:R10m977puja:)"
-                stroke-opacity="0.1"
-                stroke-width="1.5"
-                stroke-linecap="round"
-              ></path>
-              <defs>
-                <linearGradient
-                  id=":R10m977puja:"
-                  x1="1.5"
-                  y1="1"
-                  x2="1.5"
-                  y2="265"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stop-color="#F8F8F8" stop-opacity="0.05"></stop>
-                  <stop
-                    offset="0.530519"
-                    stop-color="#F8F8F8"
-                    stop-opacity="0.5"
-                  ></stop>
-                  <stop
-                    offset="1"
-                    stop-color="#F8F8F8"
-                    stop-opacity="0.05"
-                  ></stop>
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <div className="rounded-full h-3 w-3 border border-[rgba(255,255,255,0.2)] bg-[rgba(248,248,248,0.02)] shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]"></div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="2"
-              height="265"
-              viewBox="0 0 2 265"
-              fill="none"
-            >
-              <path
-                d="M1 265V1"
-                stroke="url(#:R14m977puja:)"
-                stroke-opacity="0.1"
-                stroke-width="1.5"
-                stroke-linecap="round"
-              ></path>
-              <defs>
-                <linearGradient
-                  id=":R14m977puja:"
-                  x1="1.5"
-                  y1="1"
-                  x2="1.5"
-                  y2="265"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stop-color="#F8F8F8" stop-opacity="0.05"></stop>
-                  <stop
-                    offset="0.530519"
-                    stop-color="#F8F8F8"
-                    stop-opacity="0.5"
-                  ></stop>
-                  <stop
-                    offset="1"
-                    stop-color="#F8F8F8"
-                    stop-opacity="0.05"
-                  ></stop>
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
+      <div className="p-0.5 rounded-lg border border-neutral-600 w-fit mt-10 ml-4">
+        <div className="h-10 text-xs px-2 text-neutral-400 rounded-[5px] flex items-center justify-center bg-[rgba(248,248,248,0.01)] shadow-[0px_0px_8px_0px_rgba(248,248,248,0.25)_inset,0px_32px_24px_-16px_rgba(0,0,0,0.40)]">
+          Twitter post
         </div>
-        <div className="p-0.5 rounded-lg border border-neutral-600 w-fit mt-10 ml-4">
-          <div className="h-10 text-xs px-2 text-neutral-400 rounded-[5px] flex items-center justify-center bg-[rgba(248,248,248,0.01)] shadow-[0px_0px_8px_0px_rgba(248,248,248,0.25)_inset,0px_32px_24px_-16px_rgba(0,0,0,0.40)]">
-            Twitter post
-          </div>
+      </div>
+      <div className="p-0.5 rounded-lg border border-neutral-600 w-fit mt-4 ml-10 group-hover:border-secondary transition duration-200 group-hover:scale-[1.02]">
+        <div className="h-10 text-xs px-2 text-neutral-400 rounded-[5px] flex items-center justify-center bg-[rgba(248,248,248,0.01)] shadow-[0px_0px_8px_0px_rgba(248,248,248,0.25)_inset,0px_32px_24px_-16px_rgba(0,0,0,0.40)]">
+          Email Campaign
         </div>
-        <div className="p-0.5 rounded-lg border border-neutral-600 w-fit mt-4 ml-10 group-hover:border-[var(--color-one)] transition duration-200 group-hover:scale-[1.02]">
-          <div className="h-10 text-xs px-2 text-neutral-400 rounded-[5px] flex items-center justify-center bg-[rgba(248,248,248,0.01)] shadow-[0px_0px_8px_0px_rgba(248,248,248,0.25)_inset,0px_32px_24px_-16px_rgba(0,0,0,0.40)]">
-            Email Campaign
-          </div>
+      </div>
+      <div className="p-0.5 rounded-lg border border-neutral-600 w-fit mt-4 ml-4">
+        <div className="h-10 text-xs px-2 text-neutral-400 rounded-[5px] flex items-center justify-center bg-[rgba(248,248,248,0.01)] shadow-[0px_0px_8px_0px_rgba(248,248,248,0.25)_inset,0px_32px_24px_-16px_rgba(0,0,0,0.40)]">
+          Newsletter Campaign
         </div>
-        <div className="p-0.5 rounded-lg border border-neutral-600 w-fit mt-4 ml-4">
-          <div className="h-10 text-xs px-2 text-neutral-400 rounded-[5px] flex items-center justify-center bg-[rgba(248,248,248,0.01)] shadow-[0px_0px_8px_0px_rgba(248,248,248,0.25)_inset,0px_32px_24px_-16px_rgba(0,0,0,0.40)]">
-            Newsletter Campaign
-          </div>
+      </div>
+      <div className="absolute h-4 w-4 transition-all duration-200 top-20 left-40 group-hover:left-32">
+        <svg
+          width="19"
+          height="19"
+          viewBox="0 0 19 19"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-4 w-4 transition duration-200 top-20 left-40 group-hover:left-32"
+        >
+          <path
+            d="M3.08365 1.18326C2.89589 1.11581 2.70538 1.04739 2.54453 1.00558C2.39192 0.965918 2.09732 0.900171 1.78145 1.00956C1.41932 1.13497 1.13472 1.41956 1.00932 1.78169C0.899927 2.09756 0.965674 2.39216 1.00533 2.54477C1.04714 2.70562 1.11557 2.89613 1.18301 3.0839L5.9571 16.3833C6.04091 16.6168 6.12128 16.8408 6.2006 17.0133C6.26761 17.1591 6.42 17.4781 6.75133 17.6584C7.11364 17.8555 7.54987 17.8612 7.91722 17.6737C8.25317 17.5021 8.41388 17.1873 8.48469 17.0433C8.56852 16.8729 8.65474 16.6511 8.74464 16.4198L10.8936 10.8939L16.4196 8.74489C16.6509 8.655 16.8726 8.56879 17.043 8.48498C17.187 8.41416 17.5018 8.25346 17.6734 7.91751C17.8609 7.55016 17.8552 7.11392 17.6581 6.75162C17.4778 6.42029 17.1589 6.2679 17.0131 6.20089C16.8405 6.12157 16.6165 6.0412 16.383 5.9574L3.08365 1.18326Z"
+            fill="var(--blue-900)"
+            stroke="var(--blue-500)"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+        </svg>
+        <div className="absolute top-3 left-3 p-1 rounded-md text-[10px] whitespace-pre text-neutral-500 transition duration-200 group-hover:text-secondary">
+          Manu Arora
         </div>
-        <div className="absolute h-4 w-4 transition-all duration-200 top-20 left-40 group-hover:left-32">
-          <svg
-            width="19"
-            height="19"
-            viewBox="0 0 19 19"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-4 w-4 transition duration-200 top-20 left-40 group-hover:left-32"
-          >
-            <path
-              d="M3.08365 1.18326C2.89589 1.11581 2.70538 1.04739 2.54453 1.00558C2.39192 0.965918 2.09732 0.900171 1.78145 1.00956C1.41932 1.13497 1.13472 1.41956 1.00932 1.78169C0.899927 2.09756 0.965674 2.39216 1.00533 2.54477C1.04714 2.70562 1.11557 2.89613 1.18301 3.0839L5.9571 16.3833C6.04091 16.6168 6.12128 16.8408 6.2006 17.0133C6.26761 17.1591 6.42 17.4781 6.75133 17.6584C7.11364 17.8555 7.54987 17.8612 7.91722 17.6737C8.25317 17.5021 8.41388 17.1873 8.48469 17.0433C8.56852 16.8729 8.65474 16.6511 8.74464 16.4198L10.8936 10.8939L16.4196 8.74489C16.6509 8.655 16.8726 8.56879 17.043 8.48498C17.187 8.41416 17.5018 8.25346 17.6734 7.91751C17.8609 7.55016 17.8552 7.11392 17.6581 6.75162C17.4778 6.42029 17.1589 6.2679 17.0131 6.20089C16.8405 6.12157 16.6165 6.0412 16.383 5.9574L3.08365 1.18326Z"
-              fill="var(--blue-900)"
-              stroke="var(--blue-500)"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            ></path>
-          </svg>
-          <div className="absolute top-3 left-3 p-1 rounded-md text-[10px] whitespace-pre text-neutral-500 transition duration-200 group-hover:text-secondary">
-            Manu Arora
-          </div>
-        </div>
-        <div className="absolute h-4 w-4 transition-all duration-200 top-60 left-12 group-hover:left-32 group-hover:top-44">
-          <svg
-            width="19"
-            height="19"
-            viewBox="0 0 19 19"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-4 w-4 transition duration-200 top-60 left-12 group-hover:left-32 group-hover:top-44"
-          >
-            <path
-              d="M3.08365 1.18326C2.89589 1.11581 2.70538 1.04739 2.54453 1.00558C2.39192 0.965918 2.09732 0.900171 1.78145 1.00956C1.41932 1.13497 1.13472 1.41956 1.00932 1.78169C0.899927 2.09756 0.965674 2.39216 1.00533 2.54477C1.04714 2.70562 1.11557 2.89613 1.18301 3.0839L5.9571 16.3833C6.04091 16.6168 6.12128 16.8408 6.2006 17.0133C6.26761 17.1591 6.42 17.4781 6.75133 17.6584C7.11364 17.8555 7.54987 17.8612 7.91722 17.6737C8.25317 17.5021 8.41388 17.1873 8.48469 17.0433C8.56852 16.8729 8.65474 16.6511 8.74464 16.4198L10.8936 10.8939L16.4196 8.74489C16.6509 8.655 16.8726 8.56879 17.043 8.48498C17.187 8.41416 17.5018 8.25346 17.6734 7.91751C17.8609 7.55016 17.8552 7.11392 17.6581 6.75162C17.4778 6.42029 17.1589 6.2679 17.0131 6.20089C16.8405 6.12157 16.6165 6.0412 16.383 5.9574L3.08365 1.18326Z"
-              fill="var(--blue-900)"
-              stroke="var(--blue-500)"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            ></path>
-          </svg>
-          <div className="absolute top-3 left-3 p-1 rounded-md text-[10px] whitespace-pre text-neutral-500 transition duration-200 group-hover:text-white">
-            Tyler Durden
-          </div>
+      </div>
+      <div className="absolute h-4 w-4 transition-all duration-200 top-60 left-12 group-hover:left-32 group-hover:top-44">
+        <svg
+          width="19"
+          height="19"
+          viewBox="0 0 19 19"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-4 w-4 transition duration-200 top-60 left-12 group-hover:left-32 group-hover:top-44"
+        >
+          <path
+            d="M3.08365 1.18326C2.89589 1.11581 2.70538 1.04739 2.54453 1.00558C2.39192 0.965918 2.09732 0.900171 1.78145 1.00956C1.41932 1.13497 1.13472 1.41956 1.00932 1.78169C0.899927 2.09756 0.965674 2.39216 1.00533 2.54477C1.04714 2.70562 1.11557 2.89613 1.18301 3.0839L5.9571 16.3833C6.04091 16.6168 6.12128 16.8408 6.2006 17.0133C6.26761 17.1591 6.42 17.4781 6.75133 17.6584C7.11364 17.8555 7.54987 17.8612 7.91722 17.6737C8.25317 17.5021 8.41388 17.1873 8.48469 17.0433C8.56852 16.8729 8.65474 16.6511 8.74464 16.4198L10.8936 10.8939L16.4196 8.74489C16.6509 8.655 16.8726 8.56879 17.043 8.48498C17.187 8.41416 17.5018 8.25346 17.6734 7.91751C17.8609 7.55016 17.8552 7.11392 17.6581 6.75162C17.4778 6.42029 17.1589 6.2679 17.0131 6.20089C16.8405 6.12157 16.6165 6.0412 16.383 5.9574L3.08365 1.18326Z"
+            fill="var(--blue-900)"
+            stroke="var(--blue-500)"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+        </svg>
+        <div className="absolute top-3 left-3 p-1 rounded-md text-[10px] whitespace-pre text-neutral-500 transition duration-200 group-hover:text-white">
+          Tyler Durden
         </div>
       </div>
     </>
@@ -1166,392 +802,307 @@ export function AnalyticsGraph() {
         isDarkMode ? "bg-[rgba(40,40,40,0.30)]" : "bg-gray-100"
       } [mask-image:radial-gradient(50%_50%_at_50%_50%,white_0%,transparent_100%)]`}
     >
-      <div className="p-8 overflow-hidden h-full relative flex flex-col group">
-        <div className="absolute inset-0 h-full w-full flex flex-row gap-4 justify-center flex-shrink-0 ">
-          <div className="flex flex-col items-center justify-center">
-            <div className="rounded-full h-3 w-3 border border-[rgba(255,255,255,0.2)] bg-[rgba(248,248,248,0.02)] shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]"></div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="2"
-              height="265"
-              viewBox="0 0 2 265"
-              fill="none"
+      <div className="p-8 overflow-hidden h-full">
+        <div className="flex flex-col gap-4 items-center justify-center h-full relative">
+          <AnimatePresence>
+            <motion.div
+              className="message absolute left-10 top-10 rounded-full px-4 py-2 shadow-[0px_0px_8px_0px_rgba(248,248,248,0.25)_inset,0px_32px_24px_-16px_rgba(0,0,0,0.40)_inset] bg-gray-900 text-white"
+              initial={{ opacity: 0, scale: 0.8, y: -20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.8, y: -20 }}
+              transition={{ duration: 0.3, ease: "easeOut" }}
             >
+              <p className="text-xs">+200 connections</p>
+            </motion.div>
+          </AnimatePresence>
+          <motion.svg
+            width="335"
+            height="163"
+            viewBox="0 0 335 163"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="text-neutral-600"
+          >
+            <g opacity="0.75" filter="url(#graph-line)">
               <path
-                d="M1 265V1"
-                stroke="url(#:R4m977puja:)"
-                stroke-opacity="0.1"
+                d="M335 151L317.491 36.2214C317.166 34.0879 316.477 32.0245 315.57 30.0659C307.713 13.0898 308.853 1 284 1C257.738 1 244.262 37.1622 218 37.1622C191.738 37.1622 195.262 67.5 169 67.5C142.738 67.5 141.262 37.1622 115 37.1622C88.7381 37.1622 88.7141 76.5675 62.4522 76.5675C36.1902 76.5675 36.1902 54.6756 9.9283 54.6756H0"
+                stroke="currentColor"
                 stroke-width="1.5"
-                stroke-linecap="round"
               ></path>
-              <defs>
-                <linearGradient
-                  id=":R4m977puja:"
-                  x1="1.5"
-                  y1="1"
-                  x2="1.5"
-                  y2="265"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stop-color="#F8F8F8" stop-opacity="0.05"></stop>
-                  <stop
-                    offset="0.530519"
-                    stop-color="#F8F8F8"
-                    stop-opacity="0.5"
-                  ></stop>
-                  <stop
-                    offset="1"
-                    stop-color="#F8F8F8"
-                    stop-opacity="0.05"
-                  ></stop>
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <div className="rounded-full h-3 w-3 border border-[rgba(255,255,255,0.2)] bg-[rgba(248,248,248,0.02)] shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]"></div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="2"
-              height="265"
-              viewBox="0 0 2 265"
-              fill="none"
-            >
-              <path
-                d="M1 265V1"
-                stroke="url(#:R8m977puja:)"
-                stroke-opacity="0.1"
-                stroke-width="1.5"
-                stroke-linecap="round"
-              ></path>
-              <defs>
-                <linearGradient
-                  id=":R8m977puja:"
-                  x1="1.5"
-                  y1="1"
-                  x2="1.5"
-                  y2="265"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stop-color="#F8F8F8" stop-opacity="0.05"></stop>
-                  <stop
-                    offset="0.530519"
-                    stop-color="#F8F8F8"
-                    stop-opacity="0.5"
-                  ></stop>
-                  <stop
-                    offset="1"
-                    stop-color="#F8F8F8"
-                    stop-opacity="0.05"
-                  ></stop>
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <div className="rounded-full h-3 w-3 border border-[rgba(255,255,255,0.2)] bg-[rgba(248,248,248,0.02)] shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]"></div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="2"
-              height="265"
-              viewBox="0 0 2 265"
-              fill="none"
-            >
-              <path
-                d="M1 265V1"
-                stroke="url(#:Rcm977puja:)"
-                stroke-opacity="0.1"
-                stroke-width="1.5"
-                stroke-linecap="round"
-              ></path>
-              <defs>
-                <linearGradient
-                  id=":Rcm977puja:"
-                  x1="1.5"
-                  y1="1"
-                  x2="1.5"
-                  y2="265"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stop-color="#F8F8F8" stop-opacity="0.05"></stop>
-                  <stop
-                    offset="0.530519"
-                    stop-color="#F8F8F8"
-                    stop-opacity="0.5"
-                  ></stop>
-                  <stop
-                    offset="1"
-                    stop-color="#F8F8F8"
-                    stop-opacity="0.05"
-                  ></stop>
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <div className="rounded-full h-3 w-3 border border-[rgba(255,255,255,0.2)] bg-[rgba(248,248,248,0.02)] shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]"></div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="2"
-              height="265"
-              viewBox="0 0 2 265"
-              fill="none"
-            >
-              <path
-                d="M1 265V1"
-                stroke="url(#:Rgm977puja:)"
-                stroke-opacity="0.1"
-                stroke-width="1.5"
-                stroke-linecap="round"
-              ></path>
-              <defs>
-                <linearGradient
-                  id=":Rgm977puja:"
-                  x1="1.5"
-                  y1="1"
-                  x2="1.5"
-                  y2="265"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stop-color="#F8F8F8" stop-opacity="0.05"></stop>
-                  <stop
-                    offset="0.530519"
-                    stop-color="#F8F8F8"
-                    stop-opacity="0.5"
-                  ></stop>
-                  <stop
-                    offset="1"
-                    stop-color="#F8F8F8"
-                    stop-opacity="0.05"
-                  ></stop>
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <div className="rounded-full h-3 w-3 border border-[rgba(255,255,255,0.2)] bg-[rgba(248,248,248,0.02)] shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]"></div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="2"
-              height="265"
-              viewBox="0 0 2 265"
-              fill="none"
-            >
-              <path
-                d="M1 265V1"
-                stroke="url(#:Rkm977puja:)"
-                stroke-opacity="0.1"
-                stroke-width="1.5"
-                stroke-linecap="round"
-              ></path>
-              <defs>
-                <linearGradient
-                  id=":Rkm977puja:"
-                  x1="1.5"
-                  y1="1"
-                  x2="1.5"
-                  y2="265"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stop-color="#F8F8F8" stop-opacity="0.05"></stop>
-                  <stop
-                    offset="0.530519"
-                    stop-color="#F8F8F8"
-                    stop-opacity="0.5"
-                  ></stop>
-                  <stop
-                    offset="1"
-                    stop-color="#F8F8F8"
-                    stop-opacity="0.05"
-                  ></stop>
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <div className="rounded-full h-3 w-3 border border-[rgba(255,255,255,0.2)] bg-[rgba(248,248,248,0.02)] shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]"></div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="2"
-              height="265"
-              viewBox="0 0 2 265"
-              fill="none"
-            >
-              <path
-                d="M1 265V1"
-                stroke="url(#:Rom977puja:)"
-                stroke-opacity="0.1"
-                stroke-width="1.5"
-                stroke-linecap="round"
-              ></path>
-              <defs>
-                <linearGradient
-                  id=":Rom977puja:"
-                  x1="1.5"
-                  y1="1"
-                  x2="1.5"
-                  y2="265"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stop-color="#F8F8F8" stop-opacity="0.05"></stop>
-                  <stop
-                    offset="0.530519"
-                    stop-color="#F8F8F8"
-                    stop-opacity="0.5"
-                  ></stop>
-                  <stop
-                    offset="1"
-                    stop-color="#F8F8F8"
-                    stop-opacity="0.05"
-                  ></stop>
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <div className="rounded-full h-3 w-3 border border-[rgba(255,255,255,0.2)] bg-[rgba(248,248,248,0.02)] shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]"></div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="2"
-              height="265"
-              viewBox="0 0 2 265"
-              fill="none"
-            >
-              <path
-                d="M1 265V1"
-                stroke="url(#:Rsm977puja:)"
-                stroke-opacity="0.1"
-                stroke-width="1.5"
-                stroke-linecap="round"
-              ></path>
-              <defs>
-                <linearGradient
-                  id=":Rsm977puja:"
-                  x1="1.5"
-                  y1="1"
-                  x2="1.5"
-                  y2="265"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stop-color="#F8F8F8" stop-opacity="0.05"></stop>
-                  <stop
-                    offset="0.530519"
-                    stop-color="#F8F8F8"
-                    stop-opacity="0.5"
-                  ></stop>
-                  <stop
-                    offset="1"
-                    stop-color="#F8F8F8"
-                    stop-opacity="0.05"
-                  ></stop>
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <div className="rounded-full h-3 w-3 border border-[rgba(255,255,255,0.2)] bg-[rgba(248,248,248,0.02)] shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]"></div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="2"
-              height="265"
-              viewBox="0 0 2 265"
-              fill="none"
-            >
-              <path
-                d="M1 265V1"
-                stroke="url(#:R10m977puja:)"
-                stroke-opacity="0.1"
-                stroke-width="1.5"
-                stroke-linecap="round"
-              ></path>
-              <defs>
-                <linearGradient
-                  id=":R10m977puja:"
-                  x1="1.5"
-                  y1="1"
-                  x2="1.5"
-                  y2="265"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stop-color="#F8F8F8" stop-opacity="0.05"></stop>
-                  <stop
-                    offset="0.530519"
-                    stop-color="#F8F8F8"
-                    stop-opacity="0.5"
-                  ></stop>
-                  <stop
-                    offset="1"
-                    stop-color="#F8F8F8"
-                    stop-opacity="0.05"
-                  ></stop>
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <div className="rounded-full h-3 w-3 border border-[rgba(255,255,255,0.2)] bg-[rgba(248,248,248,0.02)] shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]"></div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="2"
-              height="265"
-              viewBox="0 0 2 265"
-              fill="none"
-            >
-              <path
-                d="M1 265V1"
-                stroke="url(#:R14m977puja:)"
-                stroke-opacity="0.1"
-                stroke-width="1.5"
-                stroke-linecap="round"
-              ></path>
-              <defs>
-                <linearGradient
-                  id=":R14m977puja:"
-                  x1="1.5"
-                  y1="1"
-                  x2="1.5"
-                  y2="265"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stop-color="#F8F8F8" stop-opacity="0.05"></stop>
-                  <stop
-                    offset="0.530519"
-                    stop-color="#F8F8F8"
-                    stop-opacity="0.5"
-                  ></stop>
-                  <stop
-                    offset="1"
-                    stop-color="#F8F8F8"
-                    stop-opacity="0.05"
-                  ></stop>
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-        </div>
-        <div className="p-0.5 rounded-lg border border-neutral-600 w-fit mt-10 ml-4">
-          <div className="h-10 text-xs px-2 text-neutral-400 rounded-[5px] flex items-center justify-center bg-[rgba(248,248,248,0.01)] shadow-[0px_0px_8px_0px_rgba(248,248,248,0.25)_inset,0px_32px_24px_-16px_rgba(0,0,0,0.40)]">
-            Twitter post
-          </div>
-        </div>
-        <div className="p-0.5 rounded-lg border border-neutral-600 w-fit mt-4 ml-10 group-hover:border-secondary transition duration-200 group-hover:scale-[1.02]">
-          <div className="h-10 text-xs px-2 text-neutral-400 rounded-[5px] flex items-center justify-center bg-[rgba(248,248,248,0.01)] shadow-[0px_0px_8px_0px_rgba(248,248,248,0.25)_inset,0px_32px_24px_-16px_rgba(0,0,0,0.40)]">
-            Email Campaign
-          </div>
-        </div>
-        <div className="p-0.5 rounded-lg border border-neutral-600 w-fit mt-4 ml-4">
-          <div className="h-10 text-xs px-2 text-neutral-400 rounded-[5px] flex items-center justify-center bg-[rgba(248,248,248,0.01)] shadow-[0px_0px_8px_0px_rgba(248,248,248,0.25)_inset,0px_32px_24px_-16px_rgba(0,0,0,0.40)]">
-            Newsletter Campaign
-          </div>
-        </div>
-        <div className="absolute h-4 w-4 transition-all duration-200 top-20 left-40 group-hover:left-32">
+            </g>
+            <path
+              d="M335 151L317.491 36.2214C317.166 34.0879 316.477 32.0245 315.57 30.0659C307.713 13.0898 308.853 1 284 1C257.738 1 244.262 37.1622 218 37.1622C191.738 37.1622 195.262 67.5 169 67.5C142.738 67.5 141.262 37.1622 115 37.1622C88.7381 37.1622 88.7141 76.5675 62.4522 76.5675C36.1902 76.5675 36.1902 54.6756 9.9283 54.6756H0"
+              stroke="url(#gradient-3)"
+              stroke-width="1.5"
+            ></path>
+            <defs>
+              <filter
+                id="graph-line"
+                x="-8"
+                y="0.25"
+                width="351.741"
+                height="190.863"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+              >
+                <feFlood
+                  flood-opacity="0"
+                  result="BackgroundImageFix"
+                ></feFlood>
+                <feColorMatrix
+                  in="SourceAlpha"
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha"
+                ></feColorMatrix>
+                <feMorphology
+                  radius="16"
+                  operator="erode"
+                  in="SourceAlpha"
+                  result="effect1_dropShadow_1_60235"
+                ></feMorphology>
+                <feOffset dy="32"></feOffset>
+                <feGaussianBlur stdDeviation="12"></feGaussianBlur>
+                <feComposite in2="hardAlpha" operator="out"></feComposite>
+                <feColorMatrix
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0"
+                ></feColorMatrix>
+                <feBlend
+                  mode="multiply"
+                  in2="BackgroundImageFix"
+                  result="effect1_dropShadow_1_60235"
+                ></feBlend>
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="effect1_dropShadow_1_60235"
+                  result="shape"
+                ></feBlend>
+                <feColorMatrix
+                  in="SourceAlpha"
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha"
+                ></feColorMatrix>
+                <feOffset></feOffset>
+                <feGaussianBlur stdDeviation="4"></feGaussianBlur>
+                <feComposite
+                  in2="hardAlpha"
+                  operator="arithmetic"
+                  k2="-1"
+                  k3="1"
+                ></feComposite>
+                <feColorMatrix
+                  type="matrix"
+                  values="0 0 0 0 0.972549 0 0 0 0 0.972549 0 0 0 0 0.972549 0 0 0 0.25 0"
+                ></feColorMatrix>
+                <feBlend
+                  mode="normal"
+                  in2="shape"
+                  result="effect2_innerShadow_1_60235"
+                ></feBlend>
+              </filter>
+              <motion.linearGradient
+                id="gradient-3"
+                y1="0%"
+                y2="0%"
+                animate={{
+                  x1: ["0%", "100%"], // Move in one direction only
+                  x2: ["10%", "110%"]
+                }}
+                transition={{
+                  duration: 2, // Smooth transition
+                  ease: "linear",
+                  repeat: Infinity, // Continuous motion
+                  repeatType: "loop" // No reverse motion
+                }}
+              >
+                <stop stop-color="#001AFF" stop-opacity="0"></stop>
+                <stop offset="1" stop-color="#6DD4F5"></stop>
+                <stop offset="1" stop-color="#6DD4F5" stop-opacity="0"></stop>
+              </motion.linearGradient>
+            </defs>
+          </motion.svg>
+          <svg
+            width="335"
+            height="162"
+            viewBox="0 0 335 162"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="absolute -left-[4.4rem] top-12"
+          >
+            <path
+              opacity="0.1"
+              d="M62.4522 74.8549C36.1902 74.8549 36.1902 53.1412 9.9283 53.1412H0V162H335V148.682L317.457 36.1367C316.834 32.1397 314.854 28.4689 313.175 24.7886C308.579 14.7151 307.984 0 286 0C259.738 0 247.762 35.7703 221.5 35.7703C195.238 35.7703 196.762 66.5 170.5 66.5C144.238 66.5 141.262 35.7704 115 35.7704C88.7381 35.7704 88.7141 74.8549 62.4522 74.8549Z"
+              fill="url(#paint0_linear_1_60234)"
+            ></path>
+            <defs>
+              <linearGradient
+                id="paint0_linear_1_60234"
+                x1="167.5"
+                y1="148.4"
+                x2="183.302"
+                y2="-107.424"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="white" stop-opacity="0"></stop>
+                <stop
+                  offset="0.571573"
+                  stop-color="white"
+                  stop-opacity="0.9"
+                ></stop>
+                <stop offset="1" stop-color="white"></stop>
+              </linearGradient>
+            </defs>
+          </svg>
+          <svg
+            width="36"
+            height="320"
+            viewBox="0 0 36 320"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="absolute inset-x-0 -top-2 h-full w-full vertical-dots"
+          >
+            <path
+              opacity="0.1"
+              d="M18.75 4.5C18.75 4.08579 18.4142 3.75 18 3.75C17.5858 3.75 17.25 4.08579 17.25 4.5L18.75 4.5ZM17.25 4.5L17.25 8.56522L18.75 8.56522L18.75 4.5L17.25 4.5ZM17.25 16.6957L17.25 24.8261L18.75 24.8261L18.75 16.6957L17.25 16.6957ZM17.25 32.9565L17.25 41.087L18.75 41.087L18.75 32.9565L17.25 32.9565ZM17.25 49.2174L17.25 57.3478L18.75 57.3478L18.75 49.2174L17.25 49.2174ZM17.25 65.4783L17.25 73.6087L18.75 73.6087L18.75 65.4783L17.25 65.4783ZM17.25 81.7391L17.25 89.8696L18.75 89.8696L18.75 81.7391L17.25 81.7391ZM17.25 98L17.25 106.13L18.75 106.13L18.75 98L17.25 98ZM17.25 114.261L17.25 122.391L18.75 122.391L18.75 114.261L17.25 114.261ZM17.25 130.522L17.25 138.652L18.75 138.652L18.75 130.522L17.25 130.522ZM17.25 146.783L17.25 154.913L18.75 154.913L18.75 146.783L17.25 146.783ZM17.25 163.043L17.25 171.174L18.75 171.174L18.75 163.043L17.25 163.043ZM17.25 179.304L17.25 187.435L18.75 187.435L18.75 179.304L17.25 179.304ZM17.25 195.565L17.25 203.696L18.75 203.696L18.75 195.565L17.25 195.565ZM17.25 211.826L17.25 219.956L18.75 219.956L18.75 211.826L17.25 211.826ZM17.25 228.087L17.25 236.217L18.75 236.217L18.75 228.087L17.25 228.087ZM17.25 244.348L17.25 252.478L18.75 252.478L18.75 244.348L17.25 244.348ZM17.25 260.609L17.25 268.739L18.75 268.739L18.75 260.609L17.25 260.609ZM17.25 276.87L17.25 285L18.75 285L18.75 276.87L17.25 276.87ZM17.25 293.13L17.25 301.261L18.75 301.261L18.75 293.13L17.25 293.13ZM17.25 309.391L17.25 317.522L18.75 317.522L18.75 309.391L17.25 309.391ZM17.25 325.652L17.25 333.783L18.75 333.783L18.75 325.652L17.25 325.652ZM17.25 341.913L17.25 350.043L18.75 350.043L18.75 341.913L17.25 341.913ZM17.25 358.174L17.25 366.304L18.75 366.304L18.75 358.174L17.25 358.174ZM17.25 374.435L17.25 378.5L18.75 378.5L18.75 374.435L17.25 374.435Z"
+              fill="#F8F8F8"
+            ></path>
+            <g filter="url(#filter0_bdi_1_60257)">
+              <circle
+                cx="18"
+                cy="154"
+                r="10"
+                fill="#F8F8F8"
+                fill-opacity="0.01"
+                shape-rendering="crispEdges"
+              ></circle>
+              <circle
+                cx="18"
+                cy="154"
+                r="10"
+                fill="#121212"
+                fill-opacity="0.3"
+                shape-rendering="crispEdges"
+              ></circle>
+              <circle
+                cx="18"
+                cy="154"
+                r="9.5"
+                stroke="url(#paint0_linear_1_60257)"
+                stroke-opacity="0.25"
+                shape-rendering="crispEdges"
+              ></circle>
+            </g>
+            <circle cx="18" cy="154" r="5" fill="#F8F8F8"></circle>
+            <defs>
+              <filter
+                id="filter0_bdi_1_60257"
+                x="-4"
+                y="132"
+                width="44"
+                height="72"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+              >
+                <feFlood
+                  flood-opacity="0"
+                  result="BackgroundImageFix"
+                ></feFlood>
+                <feGaussianBlur
+                  in="BackgroundImageFix"
+                  stdDeviation="6"
+                ></feGaussianBlur>
+                <feComposite
+                  in2="SourceAlpha"
+                  operator="in"
+                  result="effect1_backgroundBlur_1_60257"
+                ></feComposite>
+                <feColorMatrix
+                  in="SourceAlpha"
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha"
+                ></feColorMatrix>
+                <feMorphology
+                  radius="16"
+                  operator="erode"
+                  in="SourceAlpha"
+                  result="effect2_dropShadow_1_60257"
+                ></feMorphology>
+                <feOffset dy="32"></feOffset>
+                <feGaussianBlur stdDeviation="12"></feGaussianBlur>
+                <feComposite in2="hardAlpha" operator="out"></feComposite>
+                <feColorMatrix
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0"
+                ></feColorMatrix>
+                <feBlend
+                  mode="multiply"
+                  in2="effect1_backgroundBlur_1_60257"
+                  result="effect2_dropShadow_1_60257"
+                ></feBlend>
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="effect2_dropShadow_1_60257"
+                  result="shape"
+                ></feBlend>
+                <feColorMatrix
+                  in="SourceAlpha"
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha"
+                ></feColorMatrix>
+                <feOffset></feOffset>
+                <feGaussianBlur stdDeviation="4"></feGaussianBlur>
+                <feComposite
+                  in2="hardAlpha"
+                  operator="arithmetic"
+                  k2="-1"
+                  k3="1"
+                ></feComposite>
+                <feColorMatrix
+                  type="matrix"
+                  values="0 0 0 0 0.972549 0 0 0 0 0.972549 0 0 0 0 0.972549 0 0 0 0.25 0"
+                ></feColorMatrix>
+                <feBlend
+                  mode="normal"
+                  in2="shape"
+                  result="effect3_innerShadow_1_60257"
+                ></feBlend>
+              </filter>
+              <linearGradient
+                id="paint0_linear_1_60257"
+                x1="18"
+                y1="144"
+                x2="26.7004"
+                y2="165.962"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="white" stop-opacity="0.4"></stop>
+                <stop
+                  offset="0.4"
+                  stop-color="white"
+                  stop-opacity="0.01"
+                ></stop>
+                <stop
+                  offset="0.6"
+                  stop-color="white"
+                  stop-opacity="0.01"
+                ></stop>
+                <stop offset="1" stop-color="white" stop-opacity="0.1"></stop>
+              </linearGradient>
+            </defs>
+          </svg>
           <svg
             width="19"
             height="19"
             viewBox="0 0 19 19"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="h-4 w-4 transition duration-200 top-20 left-40 group-hover:left-32"
+            className="absolute inset-0 translate-x-4 m-auto h-4 w-4 cursor"
           >
             <path
               d="M3.08365 1.18326C2.89589 1.11581 2.70538 1.04739 2.54453 1.00558C2.39192 0.965918 2.09732 0.900171 1.78145 1.00956C1.41932 1.13497 1.13472 1.41956 1.00932 1.78169C0.899927 2.09756 0.965674 2.39216 1.00533 2.54477C1.04714 2.70562 1.11557 2.89613 1.18301 3.0839L5.9571 16.3833C6.04091 16.6168 6.12128 16.8408 6.2006 17.0133C6.26761 17.1591 6.42 17.4781 6.75133 17.6584C7.11364 17.8555 7.54987 17.8612 7.91722 17.6737C8.25317 17.5021 8.41388 17.1873 8.48469 17.0433C8.56852 16.8729 8.65474 16.6511 8.74464 16.4198L10.8936 10.8939L16.4196 8.74489C16.6509 8.655 16.8726 8.56879 17.043 8.48498C17.187 8.41416 17.5018 8.25346 17.6734 7.91751C17.8609 7.55016 17.8552 7.11392 17.6581 6.75162C17.4778 6.42029 17.1589 6.2679 17.0131 6.20089C16.8405 6.12157 16.6165 6.0412 16.383 5.9574L3.08365 1.18326Z"
@@ -1562,31 +1113,6 @@ export function AnalyticsGraph() {
               stroke-linejoin="round"
             ></path>
           </svg>
-          <div className="absolute top-3 left-3 p-1 rounded-md text-[10px] whitespace-pre text-neutral-500 transition duration-200 group-hover:text-secondary">
-            Manu Arora
-          </div>
-        </div>
-        <div className="absolute h-4 w-4 transition-all duration-200 top-60 left-12 group-hover:left-32 group-hover:top-44">
-          <svg
-            width="19"
-            height="19"
-            viewBox="0 0 19 19"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-4 w-4 transition duration-200 top-60 left-12 group-hover:left-32 group-hover:top-44"
-          >
-            <path
-              d="M3.08365 1.18326C2.89589 1.11581 2.70538 1.04739 2.54453 1.00558C2.39192 0.965918 2.09732 0.900171 1.78145 1.00956C1.41932 1.13497 1.13472 1.41956 1.00932 1.78169C0.899927 2.09756 0.965674 2.39216 1.00533 2.54477C1.04714 2.70562 1.11557 2.89613 1.18301 3.0839L5.9571 16.3833C6.04091 16.6168 6.12128 16.8408 6.2006 17.0133C6.26761 17.1591 6.42 17.4781 6.75133 17.6584C7.11364 17.8555 7.54987 17.8612 7.91722 17.6737C8.25317 17.5021 8.41388 17.1873 8.48469 17.0433C8.56852 16.8729 8.65474 16.6511 8.74464 16.4198L10.8936 10.8939L16.4196 8.74489C16.6509 8.655 16.8726 8.56879 17.043 8.48498C17.187 8.41416 17.5018 8.25346 17.6734 7.91751C17.8609 7.55016 17.8552 7.11392 17.6581 6.75162C17.4778 6.42029 17.1589 6.2679 17.0131 6.20089C16.8405 6.12157 16.6165 6.0412 16.383 5.9574L3.08365 1.18326Z"
-              fill="var(--blue-900)"
-              stroke="var(--blue-500)"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            ></path>
-          </svg>
-          <div className="absolute top-3 left-3 p-1 rounded-md text-[10px] whitespace-pre text-neutral-500 transition duration-200 group-hover:text-white">
-            Tyler Durden
-          </div>
         </div>
       </div>
     </div>
