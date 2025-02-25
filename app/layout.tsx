@@ -11,7 +11,10 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Mavenberg Innovations",
   description: "Migration-Integration-Aggregation-Reporting",
-  generator: "akashinsights.com"
+  generator: "akashinsights.com",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
