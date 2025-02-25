@@ -58,7 +58,7 @@ export default function Navbar() {
       </div>
       <div className="flex justify-between items-center px-6 mx-auto w-full max-w-5xl md:hidden md:max-w-7xl h-[58px] backdrop-blur-md">
         <Link href="/" className="lg:w-[180px]">
-          <h1 className="font-mono text-3xl font-bold tracking-tighter uppercase">ARC</h1>
+          <h1 className="font-mono text-3xl font-bold tracking-tighter uppercase">MavenDX</h1>
         </Link>
         <div className="flex gap-4">
           <DropdownMenu.Root>
