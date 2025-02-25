@@ -1,5 +1,5 @@
 "use client"
-
+import styles from './input-otp.module.css';
 import * as React from "react"
 import { OTPInput, OTPInputContext } from "input-otp"
 import { Dot } from "lucide-react"
@@ -49,8 +49,8 @@ const InputOTPSlot = React.forwardRef<
     >
       {char}
       {hasFakeCaret && (
-        <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
-          <div className="h-4 w-px animate-caret-blink bg-foreground duration-1000" />
+        <div className={styles.prefixname296133}>
+          <div className={styles.prefixname3730f2} />
         </div>
       )}
     </div>

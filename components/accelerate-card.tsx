@@ -1,5 +1,5 @@
 "use client"
-
+import styles from './accelerate-card.module.css';
 import { LineChart, Plus } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
@@ -33,7 +33,7 @@ const NUM_BEAMS = 8
 
 export default function AccelerateCard() {
   return (
-    <div className="relative md:grid border-t-2 border-l-[1.2px] dark:[border:0.01px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_rgb(255_255_255_/_0.05)_inset] md:col-span-2 md:grid-cols-2 row-span-2 overflow-hidden bg-background">
+    <div className={`${styles.prefixnameb09498} dark:[border:0.01px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_rgb(255_255_255_/_0.05)_inset]`}>
       {/* Animated Beams */}
       {[...Array(NUM_BEAMS)].map((_, i) => {
         const angle = (360 / NUM_BEAMS) * i
@@ -56,18 +56,18 @@ export default function AccelerateCard() {
         )
       })}
 
-      <div className="relative flex top-0 left-0 flex-col p-8 h-full md:absolute md:px-10">
-        <div className="flex flex-col gap-4">
-          <div className="flex gap-2 items-center">
-            <LineChart className="w-4 h-4" />
-            <p className="text-gray-600 dark:text-gray-400">Accelerate</p>
+      <div className={styles.prefixnameff6ba4}>
+        <div className={styles.prefixnamee798b7}>
+          <div className={styles.prefixname5275e9}>
+            <LineChart className={styles.prefixname1bbd1c} />
+            <p className={styles.prefixname616bcc}>Accelerate</p>
           </div>
-          <p className="max-w-md text-2xl font-normal tracking-tighter">
+          <p className={styles.prefixname299e79}>
             Grow with us and move forward with 10x. <strong>Accelerate as speed of light</strong>
           </p>
-          <Card className="border-0 rounded-none shadow-none bg-transparent w-full">
-            <CardContent className="p-0">
-              <div className="w-full h-[300px]">
+          <Card className={styles.prefixnamea6a98a}>
+            <CardContent className={styles.prefixname19584e}>
+              <div className={styles.prefixname1bb843}>
                 {" "}
                 {/* Set a fixed height for the chart container */}
                 <ChartContainer config={chartConfig}>
@@ -104,18 +104,18 @@ export default function AccelerateCard() {
               </div>
             </CardContent>
           </Card>
-          <p className="text-md text-muted-foreground">
+          <p className={styles.prefixname2c111c}>
             We are always looking for ways to make your experience better.
-            <Link href="https://docs.arc-browser.app/themes-store/themes-marketplace" className="text-gray-50 ml-1">
+            <Link href="https://docs.arc-browser.app/themes-store/themes-marketplace" className={styles.prefixname4825ef}>
               Learn more
             </Link>
           </p>
         </div>
-        <Link href="/download" className="inline-block mt-4">
+        <Link href="/download" className={styles.prefixname9fcbac}>
           <Button>Download arc now!</Button>
         </Link>
       </div>
-      <Plus className="absolute w-8 h-8 bottom-[-15px] left-[-15px] text-black/20 dark:text-white/40" />
+      <Plus className={styles.prefixnameeab086} />
     </div>
   )
 }

@@ -1,5 +1,5 @@
 "use client"
-
+import styles from './faq-accordion.module.css';
 import * as React from "react"
 import { Plus } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
@@ -36,37 +36,37 @@ export default function FAQAccordion() {
   const [openIndex, setOpenIndex] = React.useState<number | null>(null)
 
   return (
-    <div className="bg-transparent relative w-full z-20">
-      <div className="mx-auto max-w-full px-8 py-24 sm:py-32 lg:px-10 lg:py-32 relative">
+    <div className={styles.prefixname40233d}>
+      <div className={styles.prefixnamec92def}>
         <div
-          className="absolute left-0 top-44 h-56 w-[90%] opacity-10 overflow-x-hidden bg-[#9560EB] bg-opacity-40 blur-[337.4px]"
+          className={styles.prefixnamebd56e7}
           style={{ transform: "rotate(-30deg)" }}
         />
 
-        <div className="mx-auto max-w-4xl divide-y divide-white/5">
+        <div className={`${styles.prefixname22b4e6} divide-y divide-white/5`}>
           <div>
-            <p className="mt-8 max-w-2xl mx-auto font-geist text-center text-5xl font-normal tracking-tight text-gray-800 dark:text-gray-200">
+            <p className={styles.prefixname9ab3b5}>
               Frequently Asked Questions.
             </p>
-            <p className="mt-4 max-w-xl mx-auto pt-4 text-lg text-center tracking-tight text-black/60 dark:text-gray-400">
+            <p className={styles.prefixname4cc0d3}>
               Design assets, icon teardowns, and a community of fellow icon designers where you can ask questions.
             </p>
           </div>
 
-          <dl className="mt-10 space-y-6 divide-y divide-white/10">
+          <dl className={`${styles.prefixname61eb46} divide-y divide-white/10`}>
             {faqs.map((faq, index) => (
-              <div key={index} className="pt-6">
+              <div key={index} className={styles.prefixname248fe6}>
                 <div
                   onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                  className="cursor-pointer flex w-full items-start justify-between text-left text-black dark:text-white"
+                  className={styles.prefixname508e30}
                 >
-                  <span className="text-base relative cursor-pointer font-semibold leading-7">{faq.question}</span>
+                  <span className={styles.prefixnamefbb3e7}>{faq.question}</span>
                   <motion.span
                     className="ml-6 flex h-7 items-center"
                     animate={{ rotate: openIndex === index ? 45 : 0 }}
                     transition={{ duration: 0.2 }}
                   >
-                    <Plus className="h-6 w-6" />
+                    <Plus className={styles.prefixname601216} />
                   </motion.span>
                 </div>
                 <AnimatePresence initial={false}>
@@ -100,8 +100,8 @@ export default function FAQAccordion() {
                       }}
                       className="overflow-hidden"
                     >
-                      <div className="mt-2 pr-12">
-                        <p className="text-base leading-7 text-gray-600 dark:text-gray-400">{faq.answer}</p>
+                      <div className={styles.prefixnamec24fe4}>
+                        <p className={styles.prefixname1b80a3}>{faq.answer}</p>
                       </div>
                     </motion.div>
                   )}

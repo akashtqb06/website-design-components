@@ -1,3 +1,4 @@
+import styles from './orbiting-card.module.css';
 import { Terminal } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
@@ -131,25 +132,25 @@ const Icons = {
   ),}
 const OrbitingCard = () => {
   return (
-    <div className="relative grid-cols-2 row-span-1 h-full md:grid md:col-span-3 overflow-clip border-t-[0.01px] border-b-[0.09px]">
-      <div className="flex top-0 left-0 flex-col p-16 pt-10 h-full md:absolute md:px-10">
+    <div className={styles.prefixnamefc28e4}>
+      <div className={styles.prefixname5506d3}>
         <div className="">
-          <div className="flex flex-row gap-4 justify-between">
-            <div className="border-none">
-              <div className="flex gap-2 items-center">
-                <Terminal className="w-4 h-4" />
-                <p className="text-gray-600 dark:text-gray-400">Language Agnostic</p>
+          <div className={styles.prefixnamec12bcd}>
+            <div className={styles.prefixname26d11c}>
+              <div className={styles.prefixname5275e9}>
+                <Terminal className={styles.prefixname1bbd1c} />
+                <p className={styles.prefixname616bcc}>Language Agnostic</p>
               </div>
-              <p className="mt-4 max-w-md text-2xl font-normal tracking-tighter">
+              <p className={styles.prefixname0fa280}>
                 Grow with us and move forward with 10x. <strong>Accelerate as speed of light</strong>
               </p>
               <Link href="/download">
-                <Button className="mt-4 ml-auto">Download arc now!</Button>
+                <Button className={styles.prefixname745e44}>Download arc now!</Button>
               </Link>
             </div>
-            <div className="flex flex-col gap-3 md:flex-col mt-[-100px]">
-              <div className="relative hidden md:flex h-[500px] w-[500px] flex-col items-center justify-center overflow-hidden rounded-lg bg-transparent">
-                <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-black">
+            <div className={styles.prefixnamef5b8d6}>
+              <div className={styles.prefixname826a18}>
+                <span className={styles.prefixname8e8195}>
                   Available
                 </span>
 

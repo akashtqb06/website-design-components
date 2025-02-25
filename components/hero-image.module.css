@@ -1,0 +1,23 @@
+.prefixnamef4c36b {
+  @apply relative mt-[8rem] animate-fade-up opacity-0;
+}
+.prefixnamebeb5d6 {
+  @apply rounded-xl border-white/10 bg-white bg-opacity-[0.01];
+}
+.prefixname2251ec {
+  @apply hidden relative w-full h-full rounded-[inherit];
+}
+
+:global(.dark) .prefixname2251ec {
+    @apply block;
+  }
+.prefixname173ac3 {
+  @apply block relative w-full h-full rounded-[inherit];
+}
+
+:global(.dark) .prefixname173ac3 {
+    @apply hidden;
+  }
+.prefixname661847 {
+  @apply from-cyan-500 via-cyan-200 to-cyan-100;
+}

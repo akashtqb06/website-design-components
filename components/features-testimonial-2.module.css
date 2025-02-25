@@ -1,0 +1,45 @@
+.prefixname5108d7 {
+  @apply max-w-3xl mx-auto relative z-40 h-80;
+}
+.prefixnameecf71a {
+  @apply relative pb-12 md:pb-20;
+}
+.prefixname67b374 {
+  @apply absolute left-1/2 -translate-x-1/2 w-80 h-20;
+}
+.prefixnamef5c96b {
+  @apply w-full h-full;
+}
+.prefixname70dfd1 {
+  @apply text-center;
+}
+.prefixname1592f3 {
+  @apply relative h-40 md:[mask-image:_linear-gradient(0deg,transparent,#FFFFFF_40%,#FFFFFF)];
+}
+.prefixname94834e {
+  @apply absolute top-0 left-1/2 -translate-x-1/2 w-[480px] h-[480px] pointer-events-none rounded-full;
+}
+.prefixnamee7ed84 {
+  @apply relative top-11 left-1/2 -translate-x-1/2 rounded-full;
+}
+.prefixname00b4c7 {
+  @apply relative flex flex-col;
+}
+.prefixname108072 {
+  @apply text-base md:text-xl font-bold text-foreground;
+}
+.prefixname90bbba {
+  @apply flex flex-wrap justify-center px-8 sm:px-6;
+}
+.prefixname99c483 {
+  @apply relative;
+}
+.prefixname5bdbba {
+  @apply text-foreground font-bold;
+}
+.prefixname061090 {
+  @apply block sm:hidden;
+}
+.prefixname8ff30a {
+  @apply text-muted-foreground hidden sm:inline-block;
+}

@@ -1,3 +1,4 @@
+import styles from './layout.module.css';
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "@/styles/globals.css";
@@ -31,8 +32,8 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navbar />
-          <main className="flex-grow">
-            <div className="relative overflow-hidden">{children}</div>
+          <main className={styles.prefixname844624}>
+            <div className={styles.prefixname11d7aa}>{children}</div>
           </main>
           <Footer />
         </ThemeProvider>

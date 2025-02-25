@@ -1,14 +1,15 @@
+import styles from './hero-section.module.css';
 import Link from "next/link"
 
 const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="relative mx-auto w-full mt-20 pt-40 px-6 text-center md:px-8 min-h-[calc(90vh-40px)] overflow-hidden rounded-b-xl border-t-0 border-white/20"
+      className={styles.prefixname30f00d}
     >
       {/* Left SVG */}
       <svg
-      className="absolute top-0 left-0 hidden pointer-events-none md:flex"
+      className={styles.prefixname6d5a3e}
       width="579"
       height="511"
       viewBox="0 0 579 511"
@@ -65,7 +66,7 @@ const HeroSection = () => {
 
       {/* Right SVG */}
       <svg
-    className="absolute top-0 right-0 hidden pointer-events-none md:flex"
+    className={styles.prefixname52265b}
     width="900"
     height="699"
     viewBox="0 0 445 699"
@@ -443,23 +444,23 @@ const HeroSection = () => {
   </svg>
 
       {/* Grid background */}
-      <div className="absolute -z-1 inset-0 opacity-15 h-[600px] w-full bg-transparent bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_5rem] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]"></div>
+      <div className={`${styles.prefixname6bf989} -z-1 [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]`}></div>
 
-      <div className="mt-[-75px]">
-        <h1 className="animate-fade-in -translate-y-4 text-balance bg-gradient-to-br from-black from-30% to-black/40 bg-clip-text py-6 text-5xl font-semibold leading-none tracking-tighter text-transparent opacity-0 [--animation-delay:200ms] sm:text-6xl md:text-7xl lg:text-8xl dark:from-white dark:to-white/40">
+      <div className={styles.prefixname1a4c85}>
+        <h1 className={`${styles.prefixname6e69cd} [--animation-delay:200ms]`}>
           Arc is a new way of
-          <br className="hidden md:block" /> creating software
+          <br className={styles.prefixnamed58f63} /> creating software
         </h1>
-        <p className="animate-fade-in mb-12 -translate-y-4 text-balance text-lg tracking-tight text-black/60 dark:text-gray-400 opacity-0 [--animation-delay:400ms] md:text-xl">
+        <p className={`${styles.prefixname8bf03a} [--animation-delay:400ms]`}>
           Beautifully designed, privacy-focused, and packed with features.
-          <br className="hidden md:block" /> We care about your experience, not your data.
+          <br className={styles.prefixnamed58f63} /> We care about your experience, not your data.
         </p>
-        <Link href="/download" className="flex justify-center">
-          <button className="mt-[-20px] w-full md:w-52 z-20 font-geist tracking-tighter text-center rounded-md text-md bg-gradient-to-br from-zinc-100 to-zinc-200 px-4 py-2 text-lg text-black ring-4 ring-zinc-700/90 ring-offset-4 ring-offset-zinc-100 transition-all hover:scale-[1.02] hover:ring-transparent active:scale-[0.98] active:ring-zinc-500/70 flex items-center justify-center gap-2">
+        <Link href="/download" className={styles.prefixname7c8f48}>
+          <button className={styles.prefixname59c615}>
             Get Started
           </button>
         </Link>
-        <div className="animate-fade-up relative mt-32 opacity-0 [--animation-delay:400ms] [perspective:2000px] after:absolute after:inset-0 after:z-50 after:[background:linear-gradient(to_top,hsl(var(--background))_10%,transparent)]"></div>
+        <div className={`${styles.prefixname2ce898} [--animation-delay:400ms] [perspective:2000px] after:absolute after:inset-0 after:z-50 after:[background:linear-gradient(to_top,hsl(var(--background))_10%,transparent)]`}></div>
       </div>
     </section>
   )

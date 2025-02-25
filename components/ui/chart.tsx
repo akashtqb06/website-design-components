@@ -1,5 +1,5 @@
 "use client"
-
+import styles from './chart.module.css';
 import * as React from "react"
 import * as RechartsPrimitive from "recharts"
 
@@ -184,7 +184,7 @@ const ChartTooltipContent = React.forwardRef<
         )}
       >
         {!nestLabel ? tooltipLabel : null}
-        <div className="grid gap-1.5">
+        <div className={styles.prefixname578e97}>
           {payload.map((item, index) => {
             const key = `${nameKey || item.name || item.dataKey || "value"}`
             const itemConfig = getPayloadConfigFromPayload(config, item, key)
@@ -232,14 +232,14 @@ const ChartTooltipContent = React.forwardRef<
                         nestLabel ? "items-end" : "items-center"
                       )}
                     >
-                      <div className="grid gap-1.5">
+                      <div className={styles.prefixname578e97}>
                         {nestLabel ? tooltipLabel : null}
-                        <span className="text-muted-foreground">
+                        <span className={styles.prefixname9fb938}>
                           {itemConfig?.label || item.name}
                         </span>
                       </div>
                       {item.value && (
-                        <span className="font-mono font-medium tabular-nums text-foreground">
+                        <span className={`${styles.prefixname3d70ad} tabular-nums`}>
                           {item.value.toLocaleString()}
                         </span>
                       )}
@@ -300,7 +300,7 @@ const ChartLegendContent = React.forwardRef<
                 <itemConfig.icon />
               ) : (
                 <div
-                  className="h-2 w-2 shrink-0 rounded-[2px]"
+                  className={`${styles.prefixnamed41787} shrink-0`}
                   style={{
                     backgroundColor: item.color,
                   }}

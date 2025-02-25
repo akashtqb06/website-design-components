@@ -1,4 +1,6 @@
-"use client";
+"use client"
+import styles from './features-testimonial-2.module.css';
+;
 
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
@@ -37,30 +39,24 @@ export default function FeaturedTestimonial() {
 
   return (
     <section>
-      <div className="max-w-3xl mx-auto relative z-40 h-80">
-        <div className="relative pb-12 md:pb-20">
-          <div className="absolute left-1/2 -translate-x-1/2 -top-2 -z-10 w-80 h-20 -mt-6">
-            <div className="opacity-1 w-full h-full">
+      <div className={styles.prefixname5108d7}>
+        <div className={styles.prefixnameecf71a}>
+          <div className={`${styles.prefixname67b374} -top-2 -z-10 -mt-6`}>
+            <div className={styles.prefixnamef5c96b}>
               <SparklesCore
                 background="transparent"
                 minSize={0.4}
                 maxSize={1}
                 particleDensity={1200}
-                className="w-full h-full"
+                className={styles.prefixnamef5c96b}
                 particleColor="#06b6d4"
               />
             </div>
           </div>
-          <div className="text-center">
-            <div className="relative h-40 [mask-image:_linear-gradient(0deg,transparent,#FFFFFF_30%,#FFFFFF)] md:[mask-image:_linear-gradient(0deg,transparent,#FFFFFF_40%,#FFFFFF)] dark:[mask-image:_linear-gradient(0deg,transparent,#FFFFFF_30%,#FFFFFF)]">
+          <div className={styles.prefixname70dfd1}>
+            <div className={`${styles.prefixname1592f3} [mask-image:_linear-gradient(0deg,transparent,#FFFFFF_30%,#FFFFFF)] dark:[mask-image:_linear-gradient(0deg,transparent,#FFFFFF_30%,#FFFFFF)]`}>
               <div
-                className="absolute top-0 left-1/2 -translate-x-1/2 w-[480px] h-[480px] -z-10 pointer-events-none 
-                  before:rounded-full rounded-full 
-                  before:absolute before:inset-0 
-                  before:bg-gradient-to-b before:from-neutral-300/30 before:to-transparent before:to-20% 
-                  after:rounded-full after:absolute after:inset-0 
-                  after:bg-white dark:after:bg-neutral-900 
-                  after:m-px before:-z-20 after:-z-20"
+                className={`${styles.prefixname94834e} -z-10 before:rounded-full before:absolute before:inset-0 before:bg-gradient-to-b before:from-neutral-300/30 before:to-transparent before:to-20% after:rounded-full after:absolute after:inset-0 after:bg-white dark:after:bg-neutral-900 after:m-px before:-z-20 after:-z-20`}
               >
                 <AnimatePresence mode="wait">
                   <motion.div
@@ -79,7 +75,7 @@ export default function FeaturedTestimonial() {
                       alt={featuredTestimonials[currentIndex].name}
                       width={56}
                       height={56}
-                      className="relative top-11 left-1/2 -translate-x-1/2 rounded-full"
+                      className={styles.prefixnamee7ed84}
                     />
                   </motion.div>
                 </AnimatePresence>
@@ -95,14 +91,14 @@ export default function FeaturedTestimonial() {
                 className="mb-10 transition-all duration-150 delay-300 ease-in-out px-8 sm:px-6"
                 style={{ height: "84px" }}
               >
-                <div className="relative flex flex-col">
-                  <div className="text-base md:text-xl font-bold text-foreground">
+                <div className={styles.prefixname00b4c7}>
+                  <div className={styles.prefixname108072}>
                     {featuredTestimonials[currentIndex].content}
                   </div>
                 </div>
               </motion.div>
             </AnimatePresence>
-            <div className="flex flex-wrap justify-center -m-1.5 px-8 sm:px-6">
+            <div className={`${styles.prefixname90bbba} -m-1.5`}>
               {featuredTestimonials.map((testimonial, index) => (
                 <button
                   key={testimonial.id}
@@ -113,15 +109,15 @@ export default function FeaturedTestimonial() {
                   }`}
                   onClick={() => setCurrentIndex(index)}
                 >
-                  <span className="relative">
-                    <span className="text-foreground font-bold">
+                  <span className={styles.prefixname99c483}>
+                    <span className={styles.prefixname5bdbba}>
                       {testimonial.name}
                     </span>
-                    <br className="block sm:hidden" />
-                    <span className="text-muted-foreground hidden sm:inline-block">
+                    <br className={styles.prefixname061090} />
+                    <span className={styles.prefixname8ff30a}>
                       -
                     </span>
-                    <span className="text-muted-foreground hidden sm:inline-block">
+                    <span className={styles.prefixname8ff30a}>
                       {testimonial.role}
                     </span>
                   </span>

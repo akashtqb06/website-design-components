@@ -1,0 +1,32 @@
+.prefixname381371 {
+  @apply text-center mx-auto max-w-[80rem] px-6 md:px-8;
+}
+.prefixname1123d5 {
+  @apply py-14;
+}
+.prefixname4ceaaf {
+  @apply mx-auto max-w-screen-xl px-4 md:px-8;
+}
+.prefixname6e8da6 {
+  @apply text-center text-sm font-semibold text-gray-600;
+}
+
+:global(.dark) .prefixname6e8da6 {
+    @apply text-gray-400;
+  }
+.prefixname42b34b {
+  @apply mt-6;
+}
+.prefixname72410b {
+  @apply flex flex-wrap items-center justify-center gap-x-10 gap-y-6 md:gap-x-16;
+}
+.prefixname197ff9 {
+  @apply h-8 w-28 px-2;
+}
+
+:global(.dark) .prefixname197ff9 {
+    @apply brightness-0 invert;
+  }
+.prefixname1fdb6d {
+  @apply pointer-events-none relative mx-auto h-[50rem] overflow-hidden my-[-18.8rem];
+}

@@ -1,5 +1,5 @@
 "use client"
-
+import styles from './navbar.module.css';
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { useTheme } from "next-themes"
@@ -25,20 +25,20 @@ export default function Navbar() {
   if (!mounted) return null
 
   return (
-    <nav className="sticky top-0 z-30 py-3 w-full font-sans border-b border-transparent transition duration-200 ease-in-out md:bg-transparent animate-header-slide-down-fade md:backdrop-blur-md">
-      <div className="hidden flex-row justify-between items-center px-6 mx-auto w-full md:flex lg:max-w-7xl h-[58px] md:max-w-full">
-        <Link href="/" className="pt-10 md:pt-0 w-[100px] lg:w-[180px]">
-          <h1 className="font-mono text-3xl font-bold tracking-tighter uppercase">MavenDX</h1>
+    <nav className={`${styles.prefixnameae5255} transition`}>
+      <div className={styles.prefixnamedcdafb}>
+        <Link href="/" className={styles.prefixname00be1e}>
+          <h1 className={styles.prefixname9b2aec}>MavenDX</h1>
         </Link>
-        <div className="flex items-center md:gap-4 lg:gap-6 text-[rgb(120,125,129)] mx-auto text-sm font-bold">
+        <div className={styles.prefixname859ec9}>
           {navItems.map((item) => (
-            <Link key={item.name} href={item.href} className="transition duration-150 ease-in-out hover:text-slate-50">
+            <Link key={item.name} href={item.href} className={`${styles.prefixname0471a4} transition`}>
               {item.name}
             </Link>
           ))}
         </div>
-        <div className="flex items-center gap-4">
-          <button className="text-[rgb(120,125,129)] hover:text-slate-50 transition ease-in-out duration-150 font-bold md:hidden lg:inline-block">
+        <div className={styles.prefixname46262d}>
+          <button className={`${styles.prefixnameff2e0d} transition`}>
             Sign in
           </button>
           {/* <button className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary shadow hover:bg-primary/90 h-9 px-4 py-2 animate-fade-in gap-1 rounded-lg text-white opacity-0 ease-in-out [--animation-delay:600ms] dark:text-black">
@@ -48,23 +48,23 @@ export default function Navbar() {
           <button
             type="button"
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            className="flex h-6 w-6 items-center justify-center rounded-md transition hover:bg-zinc-900/5 dark:hover:bg-white/5"
+            className={`${styles.prefixname50ccfa} transition`}
             aria-label="Toggle theme"
           >
-            <Sun className="h-5 w-5 stroke-zinc-900 dark:stroke-zinc-100 dark:hidden" />
-            <Moon className="hidden h-5 w-5 stroke-zinc-900 dark:stroke-zinc-100 dark:block" />
+            <Sun className={`${styles.prefixnamea2e57e} stroke-zinc-900 dark:stroke-zinc-100`} />
+            <Moon className={`${styles.prefixnameb6ea97} stroke-zinc-900 dark:stroke-zinc-100`} />
           </button>
         </div>
       </div>
-      <div className="flex justify-between items-center px-6 mx-auto w-full max-w-5xl md:hidden md:max-w-7xl h-[58px] backdrop-blur-md">
-        <Link href="/" className="lg:w-[180px]">
-          <h1 className="font-mono text-3xl font-bold tracking-tighter uppercase">MavenDX</h1>
+      <div className={styles.prefixnamebc6e72}>
+        <Link href="/" className={styles.prefixname0c4a3c}>
+          <h1 className={styles.prefixname9b2aec}>MavenDX</h1>
         </Link>
-        <div className="flex gap-4">
+        <div className={styles.prefixnamede75b5}>
           <DropdownMenu.Root>
             <DropdownMenu.Trigger asChild>
-              <button className="text-[rgb(120,125,129)] hover:text-slate-50 transition ease-in-out duration-150">
-                <Menu className="text-3xl" />
+              <button className={`${styles.prefixname05a177} transition`}>
+                <Menu className={styles.prefixname5954b6} />
               </button>
             </DropdownMenu.Trigger>
             <DropdownMenu.Portal>
@@ -76,7 +76,7 @@ export default function Navbar() {
                   <DropdownMenu.Item key={item.name} className="outline-none">
                     <Link
                       href={item.href}
-                      className="block px-4 py-2 text-sm text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-700 rounded-md"
+                      className={styles.prefixname2f9266}
                     >
                       {item.name}
                     </Link>
@@ -85,7 +85,7 @@ export default function Navbar() {
                 <DropdownMenu.Separator className="h-px bg-zinc-200 dark:bg-zinc-700 my-2" />
                 <DropdownMenu.Item className="outline-none">
                   <button
-                    className="w-full text-left px-4 py-2 text-sm text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-700 rounded-md"
+                    className={styles.prefixname929aef}
                     onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
                   >
                     {theme === "dark" ? "Light Mode" : "Dark Mode"}

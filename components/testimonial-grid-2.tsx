@@ -1,5 +1,5 @@
 "use client"
-
+import styles from './testimonial-grid-2.module.css';
 import { motion } from "framer-motion"
 import Image from "next/image"
 
@@ -122,8 +122,8 @@ const testimonials = [
 
 export default function TestimonialGrid() {
     return (
-      <div className="absolute inset-0 h-full w-full bg-background opacity-30 [mask-image:radial-gradient(circle_at_center,transparent_10%,white_90%)] dark:[mask-image:radial-gradient(circle_at_center,transparent_10%,black_90%)]">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto relative z-10">
+      <div className={`${styles.prefixnamea3b570} [mask-image:radial-gradient(circle_at_center,transparent_10%,white_90%)] dark:[mask-image:radial-gradient(circle_at_center,transparent_10%,black_90%)]`}>
+        <div className={styles.prefixname2c2bfd}>
           {testimonials.map((testimonial) => (
             <motion.div
               key={testimonial.id}
@@ -132,19 +132,19 @@ export default function TestimonialGrid() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <div className="p-8 rounded-xl border border-border bg-card/30 shadow-sm group">
-                <h3 className="text-base font-semibold text-card-foreground py-2">{testimonial.content}</h3>
-                <div className="flex gap-2 items-center mt-8">
+              <div className={`${styles.prefixname8ef75a} border group`}>
+                <h3 className={styles.prefixname450f34}>{testimonial.content}</h3>
+                <div className={styles.prefixname212c74}>
                   <Image
                     src={testimonial.avatar || "/placeholder.svg"}
                     alt={testimonial.name}
                     width={40}
                     height={40}
-                    className="rounded-full"
+                    className={styles.prefixnamefee2ce}
                   />
-                  <div className="flex flex-col">
-                    <p className="text-sm font-normal max-w-sm text-foreground">{testimonial.name}</p>
-                    <p className="text-sm font-normal max-w-sm text-muted-foreground">{testimonial.role}</p>
+                  <div className={styles.prefixname06858a}>
+                    <p className={styles.prefixname12f4ba}>{testimonial.name}</p>
+                    <p className={styles.prefixnamec4693f}>{testimonial.role}</p>
                   </div>
                 </div>
               </div>

@@ -1,0 +1,18 @@
+.prefixnamef505b7 {
+  @apply w-[--sidebar-width] bg-sidebar p-0 text-sidebar-foreground;
+}
+.prefixname5aa6ca {
+  @apply flex h-full w-full flex-col;
+}
+.prefixname8d6e2e {
+  @apply hidden md:block text-sidebar-foreground;
+}
+.prefixname9d5e3f {
+  @apply flex h-full w-full flex-col bg-sidebar;
+}
+.prefixnamef92b69 {
+  @apply size-4 rounded-md;
+}
+.prefixnamee1b8ef {
+  @apply h-4 flex-1 max-w-[--skeleton-width];
+}

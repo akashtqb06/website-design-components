@@ -1,0 +1,74 @@
+.prefixnameae5255 {
+  @apply sticky top-0 z-30 py-3 w-full font-sans border-b border-transparent duration-200 ease-in-out md:bg-transparent animate-header-slide-down-fade md:backdrop-blur-md;
+}
+.prefixnamedcdafb {
+  @apply hidden flex-row justify-between items-center px-6 mx-auto w-full md:flex lg:max-w-7xl h-[58px] md:max-w-full;
+}
+.prefixname00be1e {
+  @apply pt-10 md:pt-0 w-[100px] lg:w-[180px];
+}
+.prefixname9b2aec {
+  @apply font-mono text-3xl font-bold tracking-tighter uppercase;
+}
+.prefixname859ec9 {
+  @apply flex items-center md:gap-4 lg:gap-6 text-[rgb(120,125,129)] mx-auto text-sm font-bold;
+}
+.prefixname0471a4 {
+  @apply duration-150 ease-in-out hover:text-slate-50;
+}
+.prefixname46262d {
+  @apply flex items-center gap-4;
+}
+.prefixnameff2e0d {
+  @apply text-[rgb(120,125,129)] hover:text-slate-50 ease-in-out duration-150 font-bold md:hidden lg:inline-block;
+}
+.prefixname50ccfa {
+  @apply flex h-6 w-6 items-center justify-center rounded-md hover:bg-zinc-900/5;
+}
+
+:global(.dark) .prefixname50ccfa {
+    @apply hover:bg-white/5;
+  }
+.prefixnamea2e57e {
+  @apply h-5 w-5;
+}
+
+:global(.dark) .prefixnamea2e57e {
+    @apply hidden;
+  }
+.prefixnameb6ea97 {
+  @apply hidden h-5 w-5;
+}
+
+:global(.dark) .prefixnameb6ea97 {
+    @apply block;
+  }
+.prefixnamebc6e72 {
+  @apply flex justify-between items-center px-6 mx-auto w-full max-w-5xl md:hidden md:max-w-7xl h-[58px] backdrop-blur-md;
+}
+.prefixname0c4a3c {
+  @apply lg:w-[180px];
+}
+.prefixnamede75b5 {
+  @apply flex gap-4;
+}
+.prefixname05a177 {
+  @apply text-[rgb(120,125,129)] hover:text-slate-50 ease-in-out duration-150;
+}
+.prefixname5954b6 {
+  @apply text-3xl;
+}
+.prefixname2f9266 {
+  @apply block px-4 py-2 text-sm text-zinc-700 hover:bg-zinc-100 rounded-md;
+}
+
+:global(.dark) .prefixname2f9266 {
+    @apply text-zinc-300 hover:bg-zinc-700;
+  }
+.prefixname929aef {
+  @apply w-full text-left px-4 py-2 text-sm text-zinc-700 hover:bg-zinc-100 rounded-md;
+}
+
+:global(.dark) .prefixname929aef {
+    @apply text-zinc-300 hover:bg-zinc-700;
+  }

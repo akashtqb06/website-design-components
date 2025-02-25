@@ -1,0 +1,9 @@
+.prefixname9fccec {
+  @apply absolute top-0 left-0 w-screen h-screen z-40 pointer-events-none;
+}
+.prefixname0e4074 {
+  @apply absolute top-0 left-0;
+}
+.prefixnamec2e267 {
+  @apply absolute bottom-0 inset-x-0 h-40 w-full bg-gradient-to-t from-background to-transparent;
+}

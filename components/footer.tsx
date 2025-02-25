@@ -1,3 +1,4 @@
+import styles from './footer.module.css';
 import { Twitter, Github, BookOpen } from "lucide-react"
 
 const footerLinks = {
@@ -41,22 +42,22 @@ const footerLinks = {
 
 export function Footer() {
   return (
-    <footer className="overflow-x-hidden">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="grid gap-10 py-8 sm:grid-cols-12 md:py-12">
+    <footer className={styles.prefixnamefc6fe7}>
+      <div className={styles.prefixname982b1b}>
+        <div className={styles.prefixnamef1ebfe}>
           {/* Logo & Copyright */}
-          <div className="space-y-2 sm:col-span-12 lg:col-span-4">
+          <div className={styles.prefixnamecec37f}>
             <div></div>
-            <div className="text-sm text-black/60 dark:text-gray-400">© Mavenberg Innovations - All rights reserved.</div>
+            <div className={styles.prefixname6def19}>© Mavenberg Innovations - All rights reserved.</div>
           </div>
 
           {/* Product links */}
-          <div className="space-y-2 sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h3 className="text-sm font-medium">Product</h3>
-            <ul className="space-y-2 text-sm">
+          <div className={styles.prefixnameb0846a}>
+            <h3 className={styles.prefixnameaceb99}>Product</h3>
+            <ul className={styles.prefixname5b7309}>
               {footerLinks.product.map((link) => (
                 <li key={link.label}>
-                  <a className="text-black/40 dark:text-gray-400 transition hover:text-gray-900" href={link.href}>
+                  <a className={`${styles.prefixname4f0bee} transition`} href={link.href}>
                     {link.label}
                   </a>
                 </li>
@@ -65,12 +66,12 @@ export function Footer() {
           </div>
 
           {/* Company links */}
-          <div className="space-y-2 sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h3 className="text-sm font-medium">Company</h3>
-            <ul className="space-y-2 text-sm">
+          <div className={styles.prefixnameb0846a}>
+            <h3 className={styles.prefixnameaceb99}>Company</h3>
+            <ul className={styles.prefixname5b7309}>
               {footerLinks.company.map((link) => (
                 <li key={link.label}>
-                  <a className="text-black/40 dark:text-gray-400 transition hover:text-gray-900" href={link.href}>
+                  <a className={`${styles.prefixname4f0bee} transition`} href={link.href}>
                     {link.label}
                   </a>
                 </li>
@@ -79,12 +80,12 @@ export function Footer() {
           </div>
 
           {/* Resources links */}
-          <div className="space-y-2 sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h3 className="text-sm font-medium">Resources</h3>
-            <ul className="space-y-2 text-sm">
+          <div className={styles.prefixnameb0846a}>
+            <h3 className={styles.prefixnameaceb99}>Resources</h3>
+            <ul className={styles.prefixname5b7309}>
               {footerLinks.resources.map((link) => (
                 <li key={link.label}>
-                  <a className="text-black/40 dark:text-gray-400 transition hover:text-gray-900" href={link.href}>
+                  <a className={`${styles.prefixname4f0bee} transition`} href={link.href}>
                     {link.label}
                   </a>
                 </li>
@@ -93,13 +94,13 @@ export function Footer() {
           </div>
 
           {/* Social links */}
-          <div className="space-y-2 sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h3 className="text-sm font-medium">Social</h3>
-            <ul className="flex gap-1">
+          <div className={styles.prefixnameb0846a}>
+            <h3 className={styles.prefixnameaceb99}>Social</h3>
+            <ul className={styles.prefixname001656}>
               {footerLinks.social.map((link) => (
                 <li key={link.label}>
                   <a
-                    className="flex items-center justify-center text-zinc-500 transition hover:text-zinc-600"
+                    className={`${styles.prefixnamecf8a72} transition`}
                     aria-label={link.label}
                     href={link.href}
                   >
