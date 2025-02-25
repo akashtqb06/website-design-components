@@ -78,6 +78,17 @@ module.exports = {
           "0%": { opacity: 0, transform: "translateY(-10px)" },
           "100%": { opacity: 1, transform: "translateY(0)" },
         },
+        shimmer: {
+          "100%": { "background-position": "200% 0" },
+        },
+        "image-glow": {
+          "0%": { opacity: 0, "animation-timing-function": "cubic-bezier(0.74,0.25,0.76,1)" },
+          "10%": { opacity: 1, "animation-timing-function": "cubic-bezier(0.12,0.01,0.08,0.99)" },
+          "100%": { opacity: 0.2 },
+        },
+        "border-beam": {
+          "100%": { "offset-distance": "100%" },
+        },
       },
       animation: {
         "fade-in": "fadeIn 0.5s ease-out forwards",
@@ -85,6 +96,9 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "header-slide-down-fade": "header-slide-down-fade 0.5s ease-out",
+        shimmer: "shimmer 2s linear infinite",
+        "image-glow": "image-glow 4100ms 600ms ease-out forwards",
+        "border-beam": "border-beam var(--duration) infinite linear",
       },
     },
   },

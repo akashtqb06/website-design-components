@@ -1,8 +1,11 @@
 import type React from "react"
 import { Inter } from "next/font/google"
 import { ThemeProvider } from "next-themes"
-import Navbar from "@/components/Navbar"
-import "./globals.css"
+import Navbar from "@/components/navbar"
+import "@/styles/globals.css"
+import { Footer } from "@/components/footer"
+import SparklesCore from "@/components/ui/particles"
+
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -22,13 +25,12 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Navbar />
+          <SparklesCore background="transparent" minSize={0.6}
+          maxSize={1.4} particleDensity={1} className="fixed inset-0 -z-50 w-full h-full bg-transparent pointer-events-none" />
           <main>{children}</main>
+          <Footer/>
         </ThemeProvider>
       </body>
     </html>
   )
 }
-
-
-
-import './globals.css'
