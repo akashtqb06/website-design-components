@@ -38,7 +38,7 @@ export default function RootLayout({
             minSize={0.6}
             maxSize={1.4}
             particleDensity={1}
-            className="fixed inset-0 -z-50 w-full h-full bg-transparent pointer-events-none"
+            className={`${styles.prefixname36509c} -z-50`}
           />
           <main className={styles.prefixname844624}>
             <div className={styles.prefixname11d7aa}>{children}</div>

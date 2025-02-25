@@ -8,6 +8,7 @@ const { glob } = require("glob");
 const crypto = require("crypto");
 const resolveConfig = require("tailwindcss/resolveConfig");
 const tailwindConfig = require("../tailwind.config.js");
+const readline = require("readline");
 
 // 🛠️ Parse command-line arguments properly
 const argv = yargs(hideBin(process.argv))
@@ -175,15 +176,26 @@ const isTailwindClass = (cls) => {
   );
 };
 
-// 📦 Move original file to dump folder before modification
-const moveToDump = (filePath) => {
-  const dumpFolder = path.join(__dirname, "..", "dump"); // Move 'dump' outside of 'scripts'
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+
+const askQuestion = (question) => {
+  return new Promise((resolve) => {
+    rl.question(question, (answer) => resolve(answer.toLowerCase()));
+  });
+};
+
+const moveToDump = async (filePath) => {
+  const dumpFolder = path.join(__dirname, "..", "dump");
 
   if (!fs.existsSync(dumpFolder)) {
     fs.mkdirSync(dumpFolder, { recursive: true });
   }
 
-  const relativePath = path.relative(path.join(__dirname, ".."), filePath); // Adjust relative path
+  const relativePath = path.relative(path.join(__dirname, ".."), filePath);
   const dumpPath = path.join(dumpFolder, relativePath);
   const dumpDir = path.dirname(dumpPath);
 
@@ -191,13 +203,27 @@ const moveToDump = (filePath) => {
     fs.mkdirSync(dumpDir, { recursive: true });
   }
 
-  fs.copyFileSync(filePath, dumpPath);
-  console.log(`📦 Moved original to: ${dumpPath}`);
+  if (fs.existsSync(dumpPath)) {
+    const answer = await askQuestion(
+      `⚠️ File already exists in dump: ${dumpPath}. Overwrite? (yes/no): `
+    );
+
+    if (answer === "yes") {
+      fs.copyFileSync(filePath, dumpPath);
+      console.log(`📦 Overwritten in dump: ${dumpPath}`);
+    } else {
+      console.log("❌ Move operation cancelled.");
+    }
+  } else {
+    fs.copyFileSync(filePath, dumpPath);
+    console.log(`📦 Moved original to: ${dumpPath}`);
+  }
 };
+
 
 const processComponent = async (filePath) => {
   try {
-    moveToDump(filePath);
+    await moveToDump(filePath);
 
     const code = fs.readFileSync(filePath, "utf-8");
     const ext = path.extname(filePath);
@@ -352,4 +378,5 @@ const processComponent = async (filePath) => {
   for (const filePath of componentFiles) {
     await processComponent(filePath);
   }
+  rl.close();
 })();
