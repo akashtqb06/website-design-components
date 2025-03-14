@@ -65,19 +65,22 @@ const Navbar = () => {
             <AuthButtons />
           </div>
         </div>
-      </div>
-      <div className={styles.prefixnamee021b7}>
-        <div className={`${styles.prefixnamef3bcac} transition`}>
-          <Logo />
+        <div className={styles.prefixname46262d}>
+          <button className={`${styles.prefixnameff2e0d} transition`}>
+            Sign in
+          </button>
+          {/* <button className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary shadow hover:bg-primary/90 h-9 px-4 py-2 animate-fade-in gap-1 rounded-lg text-white opacity-0 ease-in-out [--animation-delay:600ms] dark:text-black">
+            <span>Download Arc </span>
+            <Download className="ml-1 size-4 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
+          </button> */}
           <button
-            onClick={toggleMenu}
-            className={styles.prefixnamedc76ae}
+            type="button"
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            className={`${styles.prefixname50ccfa} transition`}
+            aria-label="Toggle theme"
           >
-            {isMenuOpen ? (
-              <X className={styles.prefixname8fecc1} />
-            ) : (
-              <Menu className={styles.prefixname8fecc1} />
-            )}
+            <Sun className={`${styles.prefixnamea2e57e} stroke-zinc-900 dark:stroke-zinc-100`} />
+            <Moon className={`${styles.prefixnameb6ea97} stroke-zinc-900 dark:stroke-zinc-100`} />
           </button>
         </div>
       </div>
