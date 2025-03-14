@@ -279,11 +279,11 @@ function SocialIcon({ icon }: { icon: string }) {
   const icons: Record<string, JSX.Element> = {
     instagram: (
       <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
         <g
           id="SVGRepo_tracerCarrier"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         ></g>
         <g id="SVGRepo_iconCarrier">
           {" "}
@@ -316,14 +316,14 @@ function SocialIcon({ icon }: { icon: string }) {
             fill="white"
           ></path>{" "}
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21ZM16 19C17.6569 19 19 17.6569 19 16C19 14.3431 17.6569 13 16 13C14.3431 13 13 14.3431 13 16C13 17.6569 14.3431 19 16 19Z"
             fill="white"
           ></path>{" "}
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M6 15.6C6 12.2397 6 10.5595 6.65396 9.27606C7.2292 8.14708 8.14708 7.2292 9.27606 6.65396C10.5595 6 12.2397 6 15.6 6H16.4C19.7603 6 21.4405 6 22.7239 6.65396C23.8529 7.2292 24.7708 8.14708 25.346 9.27606C26 10.5595 26 12.2397 26 15.6V16.4C26 19.7603 26 21.4405 25.346 22.7239C24.7708 23.8529 23.8529 24.7708 22.7239 25.346C21.4405 26 19.7603 26 16.4 26H15.6C12.2397 26 10.5595 26 9.27606 25.346C8.14708 24.7708 7.2292 23.8529 6.65396 22.7239C6 21.4405 6 19.7603 6 16.4V15.6ZM15.6 8H16.4C18.1132 8 19.2777 8.00156 20.1779 8.0751C21.0548 8.14674 21.5032 8.27659 21.816 8.43597C22.5686 8.81947 23.1805 9.43139 23.564 10.184C23.7234 10.4968 23.8533 10.9452 23.9249 11.8221C23.9984 12.7223 24 13.8868 24 15.6V16.4C24 18.1132 23.9984 19.2777 23.9249 20.1779C23.8533 21.0548 23.7234 21.5032 23.564 21.816C23.1805 22.5686 22.5686 23.1805 21.816 23.564C21.5032 23.7234 21.0548 23.8533 20.1779 23.9249C19.2777 23.9984 18.1132 24 16.4 24H15.6C13.8868 24 12.7223 23.9984 11.8221 23.9249C10.9452 23.8533 10.4968 23.7234 10.184 23.564C9.43139 23.1805 8.81947 22.5686 8.43597 21.816C8.27659 21.5032 8.14674 21.0548 8.0751 20.1779C8.00156 19.2777 8 18.1132 8 16.4V15.6C8 13.8868 8.00156 12.7223 8.0751 11.8221C8.14674 10.9452 8.27659 10.4968 8.43597 10.184C8.81947 9.43139 9.43139 8.81947 10.184 8.43597C10.4968 8.27659 10.9452 8.14674 11.8221 8.0751C12.7223 8.00156 13.8868 8 15.6 8Z"
             fill="white"
           ></path>{" "}
@@ -338,9 +338,9 @@ function SocialIcon({ icon }: { icon: string }) {
               gradientTransform="translate(12 23) rotate(-55.3758) scale(25.5196)"
             >
               {" "}
-              <stop stop-color="#B13589"></stop>{" "}
-              <stop offset="0.79309" stop-color="#C62F94"></stop>{" "}
-              <stop offset="1" stop-color="#8A3AC8"></stop>{" "}
+              <stop stopColor="#B13589"></stop>{" "}
+              <stop offset="0.79309" stopColor="#C62F94"></stop>{" "}
+              <stop offset="1" stopColor="#8A3AC8"></stop>{" "}
             </radialGradient>{" "}
             <radialGradient
               id="paint1_radial_87_7153"
@@ -351,10 +351,10 @@ function SocialIcon({ icon }: { icon: string }) {
               gradientTransform="translate(11 31) rotate(-65.1363) scale(22.5942)"
             >
               {" "}
-              <stop stop-color="#E0E8B7"></stop>{" "}
-              <stop offset="0.444662" stop-color="#FB8A2E"></stop>{" "}
-              <stop offset="0.71474" stop-color="#E2425C"></stop>{" "}
-              <stop offset="1" stop-color="#E2425C" stop-opacity="0"></stop>{" "}
+              <stop stopColor="#E0E8B7"></stop>{" "}
+              <stop offset="0.444662" stopColor="#FB8A2E"></stop>{" "}
+              <stop offset="0.71474" stopColor="#E2425C"></stop>{" "}
+              <stop offset="1" stopColor="#E2425C" stopOpacity="0"></stop>{" "}
             </radialGradient>{" "}
             <radialGradient
               id="paint2_radial_87_7153"
@@ -365,9 +365,9 @@ function SocialIcon({ icon }: { icon: string }) {
               gradientTransform="translate(0.500002 3) rotate(-8.1301) scale(38.8909 8.31836)"
             >
               {" "}
-              <stop offset="0.156701" stop-color="#406ADC"></stop>{" "}
-              <stop offset="0.467799" stop-color="#6A45BE"></stop>{" "}
-              <stop offset="1" stop-color="#6A45BE" stop-opacity="0"></stop>{" "}
+              <stop offset="0.156701" stopColor="#406ADC"></stop>{" "}
+              <stop offset="0.467799" stopColor="#6A45BE"></stop>{" "}
+              <stop offset="1" stopColor="#6A45BE" stopOpacity="0"></stop>{" "}
             </radialGradient>{" "}
           </defs>{" "}
         </g>
@@ -380,11 +380,11 @@ function SocialIcon({ icon }: { icon: string }) {
         xmlns="http://www.w3.org/2000/svg"
         fill="#000000"
       >
-        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
         <g
           id="SVGRepo_tracerCarrier"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         ></g>
         <g id="SVGRepo_iconCarrier">
           {" "}
@@ -393,9 +393,9 @@ function SocialIcon({ icon }: { icon: string }) {
           <g
             id="Icons"
             stroke="none"
-            stroke-width="1"
+            strokeWidth="1"
             fill="none"
-            fill-rule="evenodd"
+            fillRule="evenodd"
           >
             {" "}
             <g
@@ -417,18 +417,18 @@ function SocialIcon({ icon }: { icon: string }) {
     ),
     facebook: (
       <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
         <g
           id="SVGRepo_tracerCarrier"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         ></g>
         <g id="SVGRepo_iconCarrier">
           {" "}
           <circle cx="24" cy="24" r="20" fill="#3B5998"></circle>{" "}
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M29.315 16.9578C28.6917 16.8331 27.8498 16.74 27.3204 16.74C25.8867 16.74 25.7936 17.3633 25.7936 18.3607V20.1361H29.3774L29.065 23.8137H25.7936V35H21.3063V23.8137H19V20.1361H21.3063V17.8613C21.3063 14.7453 22.7708 13 26.4477 13C27.7252 13 28.6602 13.187 29.8753 13.4363L29.315 16.9578Z"
             fill="white"
           ></path>{" "}
@@ -437,11 +437,11 @@ function SocialIcon({ icon }: { icon: string }) {
     ),
     linkedin: (
       <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none">
-        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
         <g
           id="SVGRepo_tracerCarrier"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         ></g>
         <g id="SVGRepo_iconCarrier">
           <path
@@ -457,11 +457,11 @@ function SocialIcon({ icon }: { icon: string }) {
         xmlns="http://www.w3.org/2000/svg"
         fill="var(--foreground)"
       >
-        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
         <g
           id="SVGRepo_tracerCarrier"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         ></g>
         <g id="SVGRepo_iconCarrier">
           {" "}
@@ -472,11 +472,11 @@ function SocialIcon({ icon }: { icon: string }) {
     ),
     slack: (
       <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
         <g
           id="SVGRepo_tracerCarrier"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         ></g>
         <g id="SVGRepo_iconCarrier">
           {" "}
@@ -553,7 +553,7 @@ function ConnectingLines() {
         <path
           d="M1.00001 -69L1 57.5C1 64.1274 6.37258 69.5 13 69.5H49C55.6274 69.5 61 74.8726 61 81.5L61 105"
           stroke="url(#gradient-2)"
-          stroke-width="1.5"
+          strokeWidth="1.5"
         ></path>
       </motion.svg>
 
@@ -651,7 +651,7 @@ export function UserInsights() {
             <path
               d="M0 1C9.88235 1 9.88235 64.1698 19.7647 64.1698C29.6471 64.1698 29.6471 108.623 39.5294 108.623C49.4118 108.623 49.4118 125 59.2941 125C69.1765 125 69.1765 50.1321 79.0588 50.1321C88.9412 50.1321 88.9412 94.5849 98.8235 94.5849C108.706 94.5849 108.706 73.5283 118.588 73.5283C128.471 73.5283 128.471 85.2264 138.353 85.2264C148.235 85.2264 148.235 61.8302 158.118 61.8302C168 61.8302 168 57.1509 177.882 57.1509C187.765 57.1509 187.765 52.4717 197.647 52.4717C207.529 52.4717 207.529 92.2453 217.412 92.2453C227.294 92.2453 227.294 96.9245 237.176 96.9245C247.059 96.9245 247.059 113.302 256.941 113.302C266.824 113.302 266.824 101.604 276.706 101.604C286.588 101.604 286.588 38.434 296.471 38.434C306.353 38.434 306.353 103.943 316.235 103.943C326.118 103.943 326.118 103.943 336 103.943"
               stroke="#F8F8F8"
-              stroke-width="1.5"
+              strokeWidth="1.5"
             ></path>
           </svg>
         </div>
@@ -687,7 +687,7 @@ export function UserInsights() {
             <path
               d="M0 1C9.88235 1 9.88235 64.1698 19.7647 64.1698C29.6471 64.1698 29.6471 108.623 39.5294 108.623C49.4118 108.623 49.4118 125 59.2941 125C69.1765 125 69.1765 50.1321 79.0588 50.1321C88.9412 50.1321 88.9412 94.5849 98.8235 94.5849C108.706 94.5849 108.706 73.5283 118.588 73.5283C128.471 73.5283 128.471 85.2264 138.353 85.2264C148.235 85.2264 148.235 61.8302 158.118 61.8302C168 61.8302 168 57.1509 177.882 57.1509C187.765 57.1509 187.765 52.4717 197.647 52.4717C207.529 52.4717 207.529 92.2453 217.412 92.2453C227.294 92.2453 227.294 96.9245 237.176 96.9245C247.059 96.9245 247.059 113.302 256.941 113.302C266.824 113.302 266.824 101.604 276.706 101.604C286.588 101.604 286.588 38.434 296.471 38.434C306.353 38.434 306.353 103.943 316.235 103.943C326.118 103.943 326.118 103.943 336 103.943"
               stroke="#F8F8F8"
-              stroke-width="1.5"
+              strokeWidth="1.5"
             ></path>
           </svg>
         </div>
@@ -759,9 +759,9 @@ function TimelineCards({ isDarkMode }: { isDarkMode: Boolean }) {
             d="M3.08365 1.18326C2.89589 1.11581 2.70538 1.04739 2.54453 1.00558C2.39192 0.965918 2.09732 0.900171 1.78145 1.00956C1.41932 1.13497 1.13472 1.41956 1.00932 1.78169C0.899927 2.09756 0.965674 2.39216 1.00533 2.54477C1.04714 2.70562 1.11557 2.89613 1.18301 3.0839L5.9571 16.3833C6.04091 16.6168 6.12128 16.8408 6.2006 17.0133C6.26761 17.1591 6.42 17.4781 6.75133 17.6584C7.11364 17.8555 7.54987 17.8612 7.91722 17.6737C8.25317 17.5021 8.41388 17.1873 8.48469 17.0433C8.56852 16.8729 8.65474 16.6511 8.74464 16.4198L10.8936 10.8939L16.4196 8.74489C16.6509 8.655 16.8726 8.56879 17.043 8.48498C17.187 8.41416 17.5018 8.25346 17.6734 7.91751C17.8609 7.55016 17.8552 7.11392 17.6581 6.75162C17.4778 6.42029 17.1589 6.2679 17.0131 6.20089C16.8405 6.12157 16.6165 6.0412 16.383 5.9574L3.08365 1.18326Z"
             fill="var(--blue-900)"
             stroke="var(--blue-500)"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           ></path>
         </svg>
         <div className={`${styles.prefixname39b8c9} transition group-hover:text-secondary`}>
@@ -781,9 +781,9 @@ function TimelineCards({ isDarkMode }: { isDarkMode: Boolean }) {
             d="M3.08365 1.18326C2.89589 1.11581 2.70538 1.04739 2.54453 1.00558C2.39192 0.965918 2.09732 0.900171 1.78145 1.00956C1.41932 1.13497 1.13472 1.41956 1.00932 1.78169C0.899927 2.09756 0.965674 2.39216 1.00533 2.54477C1.04714 2.70562 1.11557 2.89613 1.18301 3.0839L5.9571 16.3833C6.04091 16.6168 6.12128 16.8408 6.2006 17.0133C6.26761 17.1591 6.42 17.4781 6.75133 17.6584C7.11364 17.8555 7.54987 17.8612 7.91722 17.6737C8.25317 17.5021 8.41388 17.1873 8.48469 17.0433C8.56852 16.8729 8.65474 16.6511 8.74464 16.4198L10.8936 10.8939L16.4196 8.74489C16.6509 8.655 16.8726 8.56879 17.043 8.48498C17.187 8.41416 17.5018 8.25346 17.6734 7.91751C17.8609 7.55016 17.8552 7.11392 17.6581 6.75162C17.4778 6.42029 17.1589 6.2679 17.0131 6.20089C16.8405 6.12157 16.6165 6.0412 16.383 5.9574L3.08365 1.18326Z"
             fill="var(--blue-900)"
             stroke="var(--blue-500)"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           ></path>
         </svg>
         <div className={`${styles.prefixname9d569d} transition group-hover:text-white`}>
@@ -829,13 +829,13 @@ export function AnalyticsGraph() {
               <path
                 d="M335 151L317.491 36.2214C317.166 34.0879 316.477 32.0245 315.57 30.0659C307.713 13.0898 308.853 1 284 1C257.738 1 244.262 37.1622 218 37.1622C191.738 37.1622 195.262 67.5 169 67.5C142.738 67.5 141.262 37.1622 115 37.1622C88.7381 37.1622 88.7141 76.5675 62.4522 76.5675C36.1902 76.5675 36.1902 54.6756 9.9283 54.6756H0"
                 stroke="currentColor"
-                stroke-width="1.5"
+                strokeWidth="1.5"
               ></path>
             </g>
             <path
               d="M335 151L317.491 36.2214C317.166 34.0879 316.477 32.0245 315.57 30.0659C307.713 13.0898 308.853 1 284 1C257.738 1 244.262 37.1622 218 37.1622C191.738 37.1622 195.262 67.5 169 67.5C142.738 67.5 141.262 37.1622 115 37.1622C88.7381 37.1622 88.7141 76.5675 62.4522 76.5675C36.1902 76.5675 36.1902 54.6756 9.9283 54.6756H0"
               stroke="url(#gradient-3)"
-              stroke-width="1.5"
+              strokeWidth="1.5"
             ></path>
             <defs>
               <filter
@@ -845,10 +845,10 @@ export function AnalyticsGraph() {
                 width="351.741"
                 height="190.863"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
                 <feFlood
-                  flood-opacity="0"
+                  floodOpacity="0"
                   result="BackgroundImageFix"
                 ></feFlood>
                 <feColorMatrix
@@ -920,9 +920,9 @@ export function AnalyticsGraph() {
                   repeatType: "loop" // No reverse motion
                 }}
               >
-                <stop stop-color="#001AFF" stop-opacity="0"></stop>
-                <stop offset="1" stop-color="#6DD4F5"></stop>
-                <stop offset="1" stop-color="#6DD4F5" stop-opacity="0"></stop>
+                <stop stopColor="#001AFF" stopOpacity="0"></stop>
+                <stop offset="1" stopColor="#6DD4F5"></stop>
+                <stop offset="1" stopColor="#6DD4F5" stopOpacity="0"></stop>
               </motion.linearGradient>
             </defs>
           </motion.svg>
@@ -948,13 +948,13 @@ export function AnalyticsGraph() {
                 y2="-107.424"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="white" stop-opacity="0"></stop>
+                <stop stopColor="white" stopOpacity="0"></stop>
                 <stop
                   offset="0.571573"
-                  stop-color="white"
-                  stop-opacity="0.9"
+                  stopColor="white"
+                  stopOpacity="0.9"
                 ></stop>
-                <stop offset="1" stop-color="white"></stop>
+                <stop offset="1" stopColor="white"></stop>
               </linearGradient>
             </defs>
           </svg>
@@ -977,24 +977,24 @@ export function AnalyticsGraph() {
                 cy="154"
                 r="10"
                 fill="#F8F8F8"
-                fill-opacity="0.01"
-                shape-rendering="crispEdges"
+                fillOpacity="0.01"
+                shapeRendering="crispEdges"
               ></circle>
               <circle
                 cx="18"
                 cy="154"
                 r="10"
                 fill="#121212"
-                fill-opacity="0.3"
-                shape-rendering="crispEdges"
+                fillOpacity="0.3"
+                shapeRendering="crispEdges"
               ></circle>
               <circle
                 cx="18"
                 cy="154"
                 r="9.5"
                 stroke="url(#paint0_linear_1_60257)"
-                stroke-opacity="0.25"
-                shape-rendering="crispEdges"
+                strokeOpacity="0.25"
+                shapeRendering="crispEdges"
               ></circle>
             </g>
             <circle cx="18" cy="154" r="5" fill="#F8F8F8"></circle>
@@ -1006,10 +1006,10 @@ export function AnalyticsGraph() {
                 width="44"
                 height="72"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
                 <feFlood
-                  flood-opacity="0"
+                  floodOpacity="0"
                   result="BackgroundImageFix"
                 ></feFlood>
                 <feGaussianBlur
@@ -1083,18 +1083,18 @@ export function AnalyticsGraph() {
                 y2="165.962"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="white" stop-opacity="0.4"></stop>
+                <stop stopColor="white" stopOpacity="0.4"></stop>
                 <stop
                   offset="0.4"
-                  stop-color="white"
-                  stop-opacity="0.01"
+                  stopColor="white"
+                  stopOpacity="0.01"
                 ></stop>
                 <stop
                   offset="0.6"
-                  stop-color="white"
-                  stop-opacity="0.01"
+                  stopColor="white"
+                  stopOpacity="0.01"
                 ></stop>
-                <stop offset="1" stop-color="white" stop-opacity="0.1"></stop>
+                <stop offset="1" stopColor="white" stopOpacity="0.1"></stop>
               </linearGradient>
             </defs>
           </svg>
@@ -1110,9 +1110,9 @@ export function AnalyticsGraph() {
               d="M3.08365 1.18326C2.89589 1.11581 2.70538 1.04739 2.54453 1.00558C2.39192 0.965918 2.09732 0.900171 1.78145 1.00956C1.41932 1.13497 1.13472 1.41956 1.00932 1.78169C0.899927 2.09756 0.965674 2.39216 1.00533 2.54477C1.04714 2.70562 1.11557 2.89613 1.18301 3.0839L5.9571 16.3833C6.04091 16.6168 6.12128 16.8408 6.2006 17.0133C6.26761 17.1591 6.42 17.4781 6.75133 17.6584C7.11364 17.8555 7.54987 17.8612 7.91722 17.6737C8.25317 17.5021 8.41388 17.1873 8.48469 17.0433C8.56852 16.8729 8.65474 16.6511 8.74464 16.4198L10.8936 10.8939L16.4196 8.74489C16.6509 8.655 16.8726 8.56879 17.043 8.48498C17.187 8.41416 17.5018 8.25346 17.6734 7.91751C17.8609 7.55016 17.8552 7.11392 17.6581 6.75162C17.4778 6.42029 17.1589 6.2679 17.0131 6.20089C16.8405 6.12157 16.6165 6.0412 16.383 5.9574L3.08365 1.18326Z"
               fill="var(--blue-900)"
               stroke="var(--blue-500)"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             ></path>
           </svg>
         </div>
@@ -1158,11 +1158,11 @@ export function AIIntegration() {
                   i === 2 ? "8" : "6"
                 } [var(--foreground)]`}
               >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                 <g
                   id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 ></g>
                 <g id="SVGRepo_iconCarrier">
                   <title>OpenAI icon</title>
