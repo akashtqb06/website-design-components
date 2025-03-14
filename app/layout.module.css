@@ -1,3 +1,9 @@
 .prefixname36509c {
   @apply fixed inset-0 w-full h-full bg-transparent pointer-events-none;
 }
+.prefixname11d7aa{
+  @apply relative overflow-hidden
+}
+.prefixname844624{
+  @apply flex-grow
+}

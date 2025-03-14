@@ -8,12 +8,13 @@ import { useState, useEffect } from "react";
 import { Sun, Moon, Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { useTheme } from 'next-themes';
 
 const Navbar = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-
+  const {theme, setTheme } = useTheme();
   useEffect(() => {
     const isDark = document.documentElement.classList.contains("dark");
     setIsDarkMode(isDark);
@@ -30,7 +31,7 @@ const Navbar = () => {
   const toggleDarkMode = () => {
     const newMode = !isDarkMode;
     setIsDarkMode(newMode);
-    document.documentElement.classList.toggle("dark", newMode);
+    setTheme(theme === "dark" ? "light" : "dark")
   };
 
   const toggleMenu = () => {
@@ -51,9 +52,9 @@ const Navbar = () => {
           <div className={styles.prefixname10e06a}>
             <Logo />
             <div className={styles.prefixname2ee271}>
-              <NavLink href="#section1">Section 1</NavLink>
-              <NavLink href="#section2">Section 2</NavLink>
-              <NavLink href="#section3">Section 3</NavLink>
+            <NavLink href="/">Section 1</NavLink>
+            <NavLink href="/page2">Section 2</NavLink>
+            <NavLink href="/page3">Section 3</NavLink>
             </div>
           </div>
           <div className={styles.prefixname2aa9bd}>
@@ -184,9 +185,9 @@ return(
         </div>
         <div className={styles.prefixname42b34b}>
           <nav className={styles.prefixname14b265}>
-            <NavLink href="#section1">Section 1</NavLink>
-            <NavLink href="#section2">Section 2</NavLink>
-            <NavLink href="#section3">Section 3</NavLink>
+            <NavLink href="/">Section 1</NavLink>
+            <NavLink href="/page2">Section 2</NavLink>
+            <NavLink href="/page3">Section 3</NavLink>
           </nav>
         </div>
       </div>

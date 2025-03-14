@@ -1,9 +1,9 @@
 import styles from './hero-section-2.module.css';
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import AnimatedBadge from "./animated-badge";
+import AnimatedBadge from "../animated-badge";
 import HeroImage from "./hero-image";
-import BackgroundEffects from "./background-effect";
+import BackgroundEffects from "../background-effect";
 
 export default function HeroSection() {
   return (
